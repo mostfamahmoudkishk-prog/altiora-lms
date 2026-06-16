@@ -695,11 +695,18 @@ io.on("connection", async (socket: Socket) => {
     if (!isTeacher) return;
 
     const state = getOrCreateSessionState(sessionId);
-    const recordingsDir = path.resolve(process.cwd(), "public", "recordings", sessionId);
+    const isServerless = process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || false;
+    const recordingsDir = isServerless
+      ? path.join("/tmp", "recordings", sessionId)
+      : path.resolve(process.cwd(), "public", "recordings", sessionId);
 
     // Ensure recording folder exists
-    if (!fs.existsSync(recordingsDir)) {
-      fs.mkdirSync(recordingsDir, { recursive: true });
+    try {
+      if (!fs.existsSync(recordingsDir)) {
+        fs.mkdirSync(recordingsDir, { recursive: true });
+      }
+    } catch (err) {
+      console.warn("Failed to create recordings directory:", err);
     }
 
     const chunkFilePath = path.join(recordingsDir, "recording.webm");

@@ -3,7 +3,22 @@ import path from "node:path";
 import process from "node:process";
 import { prisma } from "./db";
 
-const fallbackDbPath = path.resolve("prisma/db-persistent-store.json");
+let fallbackDbPath = path.resolve("prisma/db-persistent-store.json");
+try {
+  const isServerless = process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || false;
+  if (isServerless) {
+    fallbackDbPath = path.join("/tmp", "db-persistent-store.json");
+  } else {
+    const testDir = path.resolve("prisma");
+    fs.mkdirSync(testDir, { recursive: true });
+    const testFile = path.join(testDir, ".write_test");
+    fs.writeFileSync(testFile, "test");
+    fs.unlinkSync(testFile);
+  }
+} catch (e) {
+  fallbackDbPath = path.join("/tmp", "db-persistent-store.json");
+}
+
 
 // Define Interface for database state according to the new schema
 interface DbState {
@@ -100,12 +115,16 @@ const initialDbState: DbState = {
 
 // Initialize file-based DB if not present
 function initializeStore() {
-  const dir = path.dirname(fallbackDbPath);
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-  if (!fs.existsSync(fallbackDbPath)) {
-    fs.writeFileSync(fallbackDbPath, JSON.stringify(initialDbState, null, 2), "utf-8");
+  try {
+    const dir = path.dirname(fallbackDbPath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    if (!fs.existsSync(fallbackDbPath)) {
+      fs.writeFileSync(fallbackDbPath, JSON.stringify(initialDbState, null, 2), "utf-8");
+    }
+  } catch (err) {
+    console.warn("Failed to initialize fallback store directory/file, using memory fallback: ", err);
   }
 }
 

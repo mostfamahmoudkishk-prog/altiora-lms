@@ -1557,11 +1557,16 @@ export const uploadFileFn = createServerFn({ method: "POST" })
       const buffer = Buffer.from(data.base64.split(",")[1] || data.base64, "base64");
       const safeName = `${Date.now()}_${data.name.replace(/[^a-zA-Z0-9.\-_]/g, "_")}`;
 
-      const baseFolder = data.isPrivate ? "./private/uploads" : "./public/uploads";
+      const isServerless = process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || false;
+      const baseFolder = isServerless ? "/tmp/uploads" : (data.isPrivate ? "./private/uploads" : "./public/uploads");
       const uploadDir = path.resolve(path.join(baseFolder, data.category));
 
-      if (!fs.existsSync(uploadDir)) {
-        fs.mkdirSync(uploadDir, { recursive: true });
+      try {
+        if (!fs.existsSync(uploadDir)) {
+          fs.mkdirSync(uploadDir, { recursive: true });
+        }
+      } catch (err) {
+        console.warn("Could not create upload directory:", err);
       }
 
       const filePath = path.join(uploadDir, safeName);
@@ -1745,9 +1750,14 @@ export const createBackupLogFn = createServerFn({ method: "POST" })
     const session = store.user_sessions.find((s) => s.session_id === sessionId);
     const initiatedBy = session ? session.user_id : null;
 
-    const backupDir = path.resolve("./private/backups");
-    if (!fs.existsSync(backupDir)) {
-      fs.mkdirSync(backupDir, { recursive: true });
+    const isServerless = process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || false;
+    const backupDir = isServerless ? "/tmp/backups" : path.resolve("./private/backups");
+    try {
+      if (!fs.existsSync(backupDir)) {
+        fs.mkdirSync(backupDir, { recursive: true });
+      }
+    } catch (err) {
+      console.warn("Could not create backup directory:", err);
     }
 
     const timestamp = new Date().toISOString();

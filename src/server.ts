@@ -371,7 +371,8 @@ export default {
 
       let storage = "healthy";
       try {
-        const testDir = path.resolve("./private/uploads/health-test");
+        const isServerless = process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || false;
+        const testDir = isServerless ? "/tmp/health-test" : path.resolve("./private/uploads/health-test");
         if (!fs.existsSync(testDir)) {
           fs.mkdirSync(testDir, { recursive: true });
         }

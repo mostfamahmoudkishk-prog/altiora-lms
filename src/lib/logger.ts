@@ -150,9 +150,14 @@ export async function rotateAndArchiveLogs(daysToKeep = 90): Promise<{ archivedC
   }
 
   // 2. Ensure archive directory exists
-  const archiveDir = path.resolve("./private/logs/archive");
-  if (!fs.existsSync(archiveDir)) {
-    fs.mkdirSync(archiveDir, { recursive: true });
+  const isServerless = process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || false;
+  const archiveDir = isServerless ? "/tmp/logs/archive" : path.resolve("./private/logs/archive");
+  try {
+    if (!fs.existsSync(archiveDir)) {
+      fs.mkdirSync(archiveDir, { recursive: true });
+    }
+  } catch (err) {
+    console.warn("Could not create log archive directory:", err);
   }
 
   // 3. Serialize and write old logs to file
@@ -160,8 +165,12 @@ export async function rotateAndArchiveLogs(daysToKeep = 90): Promise<{ archivedC
   const archiveFilename = `system_logs_archive_${dateStr}_${Date.now()}.json`;
   const archivePath = path.join(archiveDir, archiveFilename);
 
-  fs.writeFileSync(archivePath, JSON.stringify(oldLogs, null, 2), "utf-8");
-  console.log(`[LOGGER] Archived ${oldLogs.length} logs to ${archivePath}`);
+  try {
+    fs.writeFileSync(archivePath, JSON.stringify(oldLogs, null, 2), "utf-8");
+    console.log(`[LOGGER] Archived ${oldLogs.length} logs to ${archivePath}`);
+  } catch (err) {
+    console.warn("[LOGGER] Failed to write archived logs to file:", err);
+  }
 
   // 4. Delete old logs from database
   const deleted = await prisma.systemLog.deleteMany({

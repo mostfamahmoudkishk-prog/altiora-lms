@@ -1,0 +1,3719 @@
+{
+  "users": [
+    {
+      "id": "u-super",
+      "email": "superadmin@altiora.com",
+      "role": "SUPER_ADMIN"
+    },
+    {
+      "id": "u-admin",
+      "email": "admin@altiora.com",
+      "role": "ADMIN"
+    },
+    {
+      "id": "u-teacher",
+      "email": "teacher@altiora.com",
+      "role": "TEACHER"
+    },
+    {
+      "id": "u-student",
+      "email": "student@altiora.com",
+      "role": "STUDENT",
+      "studentCode": "85440"
+    },
+    {
+      "id": "u-super-mogenix-1781399884168",
+      "email": "mostfamahmoudkishk@gmail.com",
+      "role": "SUPER_ADMIN",
+      "theme": "light",
+      "themePreset": "luxury"
+    },
+    {
+      "id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "email": "mostafa.1925044@stemgharbiya.moe.edu.eg",
+      "role": "STUDENT",
+      "passwordHash": "$2b$10$WwNWToYgvwXS7Y7ZI/cw/.D6tIvdhe.LCWQ943SBqYjAUrQdB1Hsi"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "p-super",
+      "userId": "u-super",
+      "name": "المدير العام للمنصة"
+    },
+    {
+      "id": "p-admin",
+      "userId": "u-admin",
+      "name": "مسؤول النظام"
+    },
+    {
+      "id": "p-teacher",
+      "userId": "u-teacher",
+      "name": "أ. أحمد علي"
+    },
+    {
+      "id": "p-student",
+      "userId": "u-student",
+      "name": "عمر خالد"
+    },
+    {
+      "id": "p-super-mogenix-1781399884168",
+      "userId": "u-super-mogenix-1781399884168",
+      "name": "Mostafa Mahmoud Kishk",
+      "biography": "Super Admin"
+    },
+    {
+      "id": "p-1781413208455",
+      "userId": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "name": "مصطفى محمود كشك",
+      "phone": "01097987504",
+      "phoneGuardian": "01000521213",
+      "stage": "ثانوي",
+      "grade": "الصف الثاني الثانوي",
+      "gender": "ذكر",
+      "biography": "{\"phone\":\"01097987504\",\"phoneGuardian\":\"01000521213\",\"stage\":\"ثانوي\",\"grade\":\"الصف الثاني الثانوي\",\"gender\":\"ذكر\"}"
+    }
+  ],
+  "sessions": [],
+  "devices": [],
+  "loginHistories": [],
+  "courses": [],
+  "modules": [],
+  "lessons": [],
+  "watchHistories": [],
+  "continueWatchings": [],
+  "videoNotes": [],
+  "enrollments": [],
+  "studentProgress": [],
+  "activityTimelines": [],
+  "savedNotes": [],
+  "downloadedFileHistories": [],
+  "studentAccessCodes": [],
+  "exams": [],
+  "examAttempts": [
+    {
+      "id": "att_1781413227494",
+      "examId": "4b9a1d48-6a3f-4e0d-88b1-12c4d5e6f7a8",
+      "studentId": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "score": 0,
+      "passed": false,
+      "violationsCount": 0,
+      "date": "١٤‏/٦‏/٢٠٢٦، ٨:٠٠:٢٧ ص",
+      "created_at": "2026-06-14T05:00:27.494Z",
+      "updated_at": "2026-06-14T05:00:27.494Z",
+      "deleted_at": null
+    },
+    {
+      "id": "att_1781413548266",
+      "examId": "4b9a1d48-6a3f-4e0d-88b1-12c4d5e6f7a8",
+      "studentId": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "score": 0,
+      "passed": false,
+      "violationsCount": 1,
+      "date": "١٤‏/٦‏/٢٠٢٦، ٨:٠٥:٤٨ ص",
+      "created_at": "2026-06-14T05:05:48.266Z",
+      "updated_at": "2026-06-14T05:05:48.266Z",
+      "deleted_at": null
+    },
+    {
+      "id": "att_1781414180571",
+      "examId": "4b9a1d48-6a3f-4e0d-88b1-12c4d5e6f7a8",
+      "studentId": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "score": 100,
+      "passed": true,
+      "violationsCount": 0,
+      "date": "١٤‏/٦‏/٢٠٢٦، ٨:١٦:٢٠ ص",
+      "created_at": "2026-06-14T05:16:20.571Z",
+      "updated_at": "2026-06-14T05:16:20.571Z",
+      "deleted_at": null
+    }
+  ],
+  "examViolations": [],
+  "orders": [],
+  "transactions": [],
+  "coupons": [],
+  "tickets": [],
+  "replies": [],
+  "siteSettings": [],
+  "user_sessions": [
+    {
+      "id": "us_1781413208462",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "session_id": "sess_wxbcf8zs5h8021di3q8g1dn",
+      "device_id": "dev_tw7z6xt6",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T05:32:34.699Z",
+      "created_at": "2026-06-14T05:00:08.462Z",
+      "revoked_at": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "us_1781415578501",
+      "user_id": "u-teacher",
+      "session_id": "sess_or0qmza1ur8pv288c0yfh9",
+      "device_id": "dev_vkfqxz6s",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T05:59:11.295Z",
+      "created_at": "2026-06-14T05:39:38.501Z",
+      "revoked_at": "2026-06-14T05:59:15.639Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781416823948",
+      "user_id": "u-admin",
+      "session_id": "sess_7jos27k3hyv78hdz9qc8sy",
+      "device_id": "dev_e2ei3mgb",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T06:08:52.804Z",
+      "created_at": "2026-06-14T06:00:23.948Z",
+      "revoked_at": "2026-06-14T06:08:57.870Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781439772852",
+      "user_id": "u-teacher",
+      "session_id": "sess_r8p9zs874y5f7h29djxae",
+      "device_id": "dev_ced8f13d",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T12:24:54.620Z",
+      "created_at": "2026-06-14T12:22:52.852Z",
+      "revoked_at": "2026-06-14T12:25:41.317Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781448906647",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_y9owm15suaf00zz6iiaqdr4",
+      "device_id": "dev_q5p963dl",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T14:58:25.644Z",
+      "created_at": "2026-06-14T14:55:06.647Z",
+      "revoked_at": "2026-06-14T14:58:36.450Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781449135742",
+      "user_id": "u-teacher",
+      "session_id": "sess_xymppm7axxbn8rt9y2ip6q",
+      "device_id": "dev_5e2l648k",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T15:01:35.106Z",
+      "created_at": "2026-06-14T14:58:55.742Z",
+      "revoked_at": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "us_1781449374189",
+      "user_id": "u-teacher",
+      "session_id": "sess_ppk5gvrnrqromrciy7kja",
+      "device_id": "dev_8xh3jepj",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T15:02:55.501Z",
+      "created_at": "2026-06-14T15:02:54.189Z",
+      "revoked_at": "2026-06-14T15:03:14.473Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781449520661",
+      "user_id": "u-teacher",
+      "session_id": "sess_ovp283kxjqa9zaqf3ewa9",
+      "device_id": "dev_s2uznhw5",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T15:05:21.473Z",
+      "created_at": "2026-06-14T15:05:20.661Z",
+      "revoked_at": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "us_1781450044162",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_mrne6sdjk1i81c0jgb1mbp",
+      "device_id": "dev_x940qrco",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T15:14:10.310Z",
+      "created_at": "2026-06-14T15:14:04.162Z",
+      "revoked_at": "2026-06-14T15:15:34.504Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781450919164",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_x8a423y3awqofkd1qgh7qk",
+      "device_id": "dev_ccex8azk",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T15:28:43.898Z",
+      "created_at": "2026-06-14T15:28:39.164Z",
+      "revoked_at": "2026-06-14T15:46:16.985Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781451885521",
+      "user_id": "u-admin",
+      "session_id": "sess_yul86rz6pude0nzcxlsz",
+      "device_id": "dev_rsvyietu",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T15:44:47.049Z",
+      "created_at": "2026-06-14T15:44:45.521Z",
+      "revoked_at": "2026-06-14T15:46:07.393Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781451976985",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_5onnkyif4zvooki419ztkk",
+      "device_id": "dev_f89al6v3",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T15:47:44.824Z",
+      "created_at": "2026-06-14T15:46:16.985Z",
+      "revoked_at": "2026-06-14T17:42:48.263Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781453382966",
+      "user_id": "u-teacher",
+      "session_id": "sess_73rzzfq9qeyd3ebtpz46",
+      "device_id": "dev_0ekbn4y4",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T17:39:16.014Z",
+      "created_at": "2026-06-14T16:09:42.966Z",
+      "revoked_at": "2026-06-14T17:40:13.357Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781458824975",
+      "user_id": "u-admin",
+      "session_id": "sess_lcgjcxqgcks68ztuv8fn",
+      "device_id": "dev_fjkula2y",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T17:42:26.647Z",
+      "created_at": "2026-06-14T17:40:24.975Z",
+      "revoked_at": "2026-06-14T17:42:39.943Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781458968263",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_vlsbiqxd758a2ob66k3a",
+      "device_id": "dev_3axbz3tl",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T17:47:19.017Z",
+      "created_at": "2026-06-14T17:42:48.263Z",
+      "revoked_at": "2026-06-14T17:48:12.440Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781465352857",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_v9rv8deat2weicg3gnuw",
+      "device_id": "dev_zdblaf9c",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T19:29:38.673Z",
+      "created_at": "2026-06-14T19:29:12.857Z",
+      "revoked_at": "2026-06-14T19:30:06.703Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781467418757",
+      "user_id": "u-student",
+      "session_id": "sess_yildj33nadnhs84a2lwz3h",
+      "device_id": "dev_60u3a4wi",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T20:08:28.486Z",
+      "created_at": "2026-06-14T20:03:38.757Z",
+      "revoked_at": "2026-06-14T20:08:53.724Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781467744410",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_1aj28qk9br82l26gtvtdlr",
+      "device_id": "dev_5mmema8n",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T20:11:47.066Z",
+      "created_at": "2026-06-14T20:09:04.410Z",
+      "revoked_at": "2026-06-14T20:24:38.444Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781468678444",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_qup0oo31xjt0pkpmacpx",
+      "device_id": "dev_oj8cti5a",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T20:24:42.474Z",
+      "created_at": "2026-06-14T20:24:38.444Z",
+      "revoked_at": "2026-06-14T20:25:28.456Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781474469516",
+      "user_id": "u-admin",
+      "session_id": "sess_g6e0xrq2dq5r6sp7c9edv",
+      "device_id": "dev_gis8d9o8",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T22:01:10.952Z",
+      "created_at": "2026-06-14T22:01:09.516Z",
+      "revoked_at": "2026-06-14T22:01:37.472Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781474504661",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_mvazb8vkppa2j62u7mkvre",
+      "device_id": "dev_xd2nx0l8",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T22:06:43.358Z",
+      "created_at": "2026-06-14T22:01:44.660Z",
+      "revoked_at": "2026-06-14T22:58:18.219Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781477898220",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_nf1lm5jtsdh4atg3gg6v6",
+      "device_id": "dev_66u3przk",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T22:58:24.452Z",
+      "created_at": "2026-06-14T22:58:18.219Z",
+      "revoked_at": "2026-06-14T22:59:01.980Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781477967739",
+      "user_id": "u-teacher",
+      "session_id": "sess_8qmtqmu19rehaivzaz048",
+      "device_id": "dev_pxt1chvx",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T23:03:30.040Z",
+      "created_at": "2026-06-14T22:59:27.739Z",
+      "revoked_at": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "us_1781478320687",
+      "user_id": "u-student",
+      "session_id": "sess_s4lb6ia33xn5t0622vt6e4",
+      "device_id": "dev_xbu5uh9o",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-14T23:05:54.813Z",
+      "created_at": "2026-06-14T23:05:20.687Z",
+      "revoked_at": "2026-06-14T23:06:30.611Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781478400925",
+      "user_id": "u-teacher",
+      "session_id": "sess_i4pl5ss0kzddl1w0oe8eqk",
+      "device_id": "dev_yru59ine",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T00:30:54.549Z",
+      "created_at": "2026-06-14T23:06:40.925Z",
+      "revoked_at": "2026-06-15T00:31:40.090Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781483519398",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_f4lvkc0ktlbd72jgwlorpr",
+      "device_id": "dev_y679rwrz",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T09:30:40.437Z",
+      "created_at": "2026-06-15T00:31:59.397Z",
+      "revoked_at": "2026-06-15T09:31:23.708Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781515951123",
+      "user_id": "u-teacher",
+      "session_id": "sess_oqi3gta7mnqkh1e9fk9oxe",
+      "device_id": "dev_im7hensu",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T09:32:33.017Z",
+      "created_at": "2026-06-15T09:32:31.123Z",
+      "revoked_at": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "us_1781515985546",
+      "user_id": "u-teacher",
+      "session_id": "sess_4wi26hmgw0ejdyx3scy7h",
+      "device_id": "dev_i5pis02g",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T10:28:48.557Z",
+      "created_at": "2026-06-15T09:33:05.546Z",
+      "revoked_at": "2026-06-15T10:30:26.652Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781519433919",
+      "user_id": "u-teacher",
+      "session_id": "sess_8zcat8z84pkubvm79wc7q",
+      "device_id": "dev_sx0i5qws",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T10:30:35.125Z",
+      "created_at": "2026-06-15T10:30:33.919Z",
+      "revoked_at": "2026-06-15T10:30:45.567Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781519452640",
+      "user_id": "u-teacher",
+      "session_id": "sess_ammyytre9yg8cokuwxf7eo",
+      "device_id": "dev_u8rr0nvd",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T10:30:53.648Z",
+      "created_at": "2026-06-15T10:30:52.640Z",
+      "revoked_at": "2026-06-15T10:31:41.736Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781519531509",
+      "user_id": "u-student",
+      "session_id": "sess_9dylipqqwyi1ow0pwv32",
+      "device_id": "dev_rp7z2lc5",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T10:35:23.166Z",
+      "created_at": "2026-06-15T10:32:11.509Z",
+      "revoked_at": "2026-06-15T10:35:29.332Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781520492063",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_o3aa55at0wmkmajp4gme1d",
+      "device_id": "dev_9x9einsk",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T16:10:46.835Z",
+      "created_at": "2026-06-15T10:48:12.063Z",
+      "revoked_at": "2026-06-15T16:12:07.224Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781539936821",
+      "user_id": "u-teacher",
+      "session_id": "sess_l0pq7lst87o7485thqqlc",
+      "device_id": "dev_6fajwjmw",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T16:22:49.870Z",
+      "created_at": "2026-06-15T16:12:16.821Z",
+      "revoked_at": "2026-06-15T16:22:56.937Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781540619199",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_h51ta58jrtum5swnyxw6un",
+      "device_id": "dev_4bur0g0s",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T17:36:14.795Z",
+      "created_at": "2026-06-15T16:23:39.198Z",
+      "revoked_at": "2026-06-15T17:36:53.045Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781545022685",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_92mg709goz63t8476hv7pj",
+      "device_id": "dev_aii1a1uf",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T17:37:04.894Z",
+      "created_at": "2026-06-15T17:37:02.684Z",
+      "revoked_at": "2026-06-15T23:35:40.260Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781545038211",
+      "user_id": "u-teacher",
+      "session_id": "sess_er1gkniyf6k1f3ov4qxhjah",
+      "device_id": "dev_0paeug0e",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T17:48:09.912Z",
+      "created_at": "2026-06-15T17:37:18.211Z",
+      "revoked_at": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "us_1781566540261",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_olrdacjs5j6024hel90tf",
+      "device_id": "dev_65xabwks",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T23:35:43.942Z",
+      "created_at": "2026-06-15T23:35:40.260Z",
+      "revoked_at": "2026-06-15T23:37:53.747Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781566673748",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_0yc1kmzb7t59hz25y1gfisv",
+      "device_id": "dev_712pdtr6",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T23:42:04.963Z",
+      "created_at": "2026-06-15T23:37:53.747Z",
+      "revoked_at": "2026-06-15T23:42:47.854Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781566967854",
+      "user_id": "u-super-mogenix-1781399884168",
+      "session_id": "sess_tzygm594m7sownnnzloj",
+      "device_id": "dev_4ba59xjt",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T23:45:20.254Z",
+      "created_at": "2026-06-15T23:42:47.854Z",
+      "revoked_at": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "us_1781567173307",
+      "user_id": "u-teacher",
+      "session_id": "sess_b20yy0uyn4y6qpk08xktj",
+      "device_id": "dev_xcuwe3qp",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-15T23:46:14.523Z",
+      "created_at": "2026-06-15T23:46:13.307Z",
+      "revoked_at": null,
+      "status": "ACTIVE"
+    }
+  ],
+  "user_devices": [
+    {
+      "id": "ud_1781413208462",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "device_id": "dev_tw7z6xt6",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T05:00:08.462Z",
+      "last_seen": "2026-06-14T05:00:08.462Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781415578501",
+      "user_id": "u-teacher",
+      "device_id": "dev_vkfqxz6s",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T05:39:38.501Z",
+      "last_seen": "2026-06-14T05:39:38.501Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781416823948",
+      "user_id": "u-admin",
+      "device_id": "dev_e2ei3mgb",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T06:00:23.948Z",
+      "last_seen": "2026-06-14T06:00:23.948Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781439772852",
+      "user_id": "u-teacher",
+      "device_id": "dev_ced8f13d",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T12:22:52.852Z",
+      "last_seen": "2026-06-14T12:22:52.852Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781448906647",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_q5p963dl",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T14:55:06.647Z",
+      "last_seen": "2026-06-14T14:55:06.647Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781449135742",
+      "user_id": "u-teacher",
+      "device_id": "dev_5e2l648k",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T14:58:55.742Z",
+      "last_seen": "2026-06-14T14:58:55.742Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781449374189",
+      "user_id": "u-teacher",
+      "device_id": "dev_8xh3jepj",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T15:02:54.189Z",
+      "last_seen": "2026-06-14T15:02:54.189Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781449520661",
+      "user_id": "u-teacher",
+      "device_id": "dev_s2uznhw5",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T15:05:20.661Z",
+      "last_seen": "2026-06-14T15:05:20.661Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781450044162",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_x940qrco",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T15:14:04.162Z",
+      "last_seen": "2026-06-14T15:14:04.162Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781450919164",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_ccex8azk",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T15:28:39.164Z",
+      "last_seen": "2026-06-14T15:28:39.164Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781451885521",
+      "user_id": "u-admin",
+      "device_id": "dev_rsvyietu",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T15:44:45.521Z",
+      "last_seen": "2026-06-14T15:44:45.521Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781451976985",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_f89al6v3",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T15:46:16.985Z",
+      "last_seen": "2026-06-14T15:46:16.985Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781453382966",
+      "user_id": "u-teacher",
+      "device_id": "dev_0ekbn4y4",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T16:09:42.966Z",
+      "last_seen": "2026-06-14T16:09:42.966Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781458824975",
+      "user_id": "u-admin",
+      "device_id": "dev_fjkula2y",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T17:40:24.975Z",
+      "last_seen": "2026-06-14T17:40:24.975Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781458968263",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_3axbz3tl",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T17:42:48.263Z",
+      "last_seen": "2026-06-14T17:42:48.263Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781465352857",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_zdblaf9c",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T19:29:12.857Z",
+      "last_seen": "2026-06-14T19:29:12.857Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781467418757",
+      "user_id": "u-student",
+      "device_id": "dev_60u3a4wi",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T20:03:38.757Z",
+      "last_seen": "2026-06-14T20:03:38.757Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781467744410",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_5mmema8n",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T20:09:04.410Z",
+      "last_seen": "2026-06-14T20:09:04.410Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781468678444",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_oj8cti5a",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T20:24:38.444Z",
+      "last_seen": "2026-06-14T20:24:38.444Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781474469516",
+      "user_id": "u-admin",
+      "device_id": "dev_gis8d9o8",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T22:01:09.516Z",
+      "last_seen": "2026-06-14T22:01:09.516Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781474504661",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_xd2nx0l8",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T22:01:44.660Z",
+      "last_seen": "2026-06-14T22:01:44.660Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781477898220",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_66u3przk",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T22:58:18.219Z",
+      "last_seen": "2026-06-14T22:58:18.219Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781477967739",
+      "user_id": "u-teacher",
+      "device_id": "dev_pxt1chvx",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T22:59:27.739Z",
+      "last_seen": "2026-06-14T22:59:27.739Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781478320687",
+      "user_id": "u-student",
+      "device_id": "dev_xbu5uh9o",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T23:05:20.687Z",
+      "last_seen": "2026-06-14T23:05:20.687Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781478400925",
+      "user_id": "u-teacher",
+      "device_id": "dev_yru59ine",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-14T23:06:40.925Z",
+      "last_seen": "2026-06-14T23:06:40.925Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781483519398",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_y679rwrz",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T00:31:59.397Z",
+      "last_seen": "2026-06-15T00:31:59.397Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781515951123",
+      "user_id": "u-teacher",
+      "device_id": "dev_im7hensu",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T09:32:31.123Z",
+      "last_seen": "2026-06-15T09:32:31.123Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781515985546",
+      "user_id": "u-teacher",
+      "device_id": "dev_i5pis02g",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T09:33:05.546Z",
+      "last_seen": "2026-06-15T09:33:05.546Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781519433919",
+      "user_id": "u-teacher",
+      "device_id": "dev_sx0i5qws",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T10:30:33.919Z",
+      "last_seen": "2026-06-15T10:30:33.919Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781519452640",
+      "user_id": "u-teacher",
+      "device_id": "dev_u8rr0nvd",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T10:30:52.640Z",
+      "last_seen": "2026-06-15T10:30:52.640Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781519531509",
+      "user_id": "u-student",
+      "device_id": "dev_rp7z2lc5",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T10:32:11.509Z",
+      "last_seen": "2026-06-15T10:32:11.509Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781520492063",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_9x9einsk",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T10:48:12.063Z",
+      "last_seen": "2026-06-15T10:48:12.063Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781539936821",
+      "user_id": "u-teacher",
+      "device_id": "dev_6fajwjmw",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T16:12:16.821Z",
+      "last_seen": "2026-06-15T16:12:16.821Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781540619199",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_4bur0g0s",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T16:23:39.198Z",
+      "last_seen": "2026-06-15T16:23:39.198Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781545022685",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_aii1a1uf",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T17:37:02.684Z",
+      "last_seen": "2026-06-15T17:37:02.684Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781545038211",
+      "user_id": "u-teacher",
+      "device_id": "dev_0paeug0e",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T17:37:18.211Z",
+      "last_seen": "2026-06-15T17:37:18.211Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781566540261",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_65xabwks",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T23:35:40.260Z",
+      "last_seen": "2026-06-15T23:35:40.260Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781566673748",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_712pdtr6",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T23:37:53.747Z",
+      "last_seen": "2026-06-15T23:37:53.747Z",
+      "revoked": true
+    },
+    {
+      "id": "ud_1781566967854",
+      "user_id": "u-super-mogenix-1781399884168",
+      "device_id": "dev_4ba59xjt",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T23:42:47.854Z",
+      "last_seen": "2026-06-15T23:42:47.854Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781567173307",
+      "user_id": "u-teacher",
+      "device_id": "dev_xcuwe3qp",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-15T23:46:13.307Z",
+      "last_seen": "2026-06-15T23:46:13.307Z",
+      "revoked": false
+    }
+  ],
+  "security_events": [
+    {
+      "id": "sec_fail_1781410808372",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T04:20:08.372Z"
+    },
+    {
+      "id": "sec_fail_1781411843041",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T04:37:23.041Z"
+    },
+    {
+      "id": "sec_fail_1781411854237",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T04:37:34.237Z"
+    },
+    {
+      "id": "sec_fail_1781412233479",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T04:43:53.479Z"
+    },
+    {
+      "id": "sec_fail_1781412241599",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T04:44:01.599Z"
+    },
+    {
+      "id": "sec_fail_1781412786420",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T04:53:06.420Z"
+    },
+    {
+      "id": "sec_fail_1781413129655",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T04:58:49.655Z"
+    },
+    {
+      "id": "sec_fail_1781413147246",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T04:59:07.246Z"
+    },
+    {
+      "id": "sec_login_1781413208462",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_tw7z6xt6",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T05:00:08.462Z"
+    },
+    {
+      "id": "sec_dev_1781413208462",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_tw7z6xt6",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T05:00:08.462Z"
+    },
+    {
+      "id": "sec_viol_1781413548260",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "type": "EXAM_VIOLATION",
+      "severity": "HIGH",
+      "metadata": {
+        "exam_id": "اختبار زمن المضارع البسيط والمسند",
+        "violation_type": "EXAM_VIOLATION",
+        "details": "٨:٠٥:٢٣ ص - الخروج من وضع ملء الشاشة (Fullscreen Exited)"
+      },
+      "created_at": "2026-06-14T05:05:48.260Z"
+    },
+    {
+      "id": "sec_fail_1781414913792",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T05:28:33.792Z"
+    },
+    {
+      "id": "sec_fail_1781415225068",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T05:33:45.068Z"
+    },
+    {
+      "id": "sec_fail_1781415317827",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T05:35:17.827Z"
+    },
+    {
+      "id": "sec_fail_1781415526033",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T05:38:46.033Z"
+    },
+    {
+      "id": "sec_login_1781415578501",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_vkfqxz6s",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T05:39:38.501Z"
+    },
+    {
+      "id": "sec_dev_1781415578501",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_vkfqxz6s",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T05:39:38.501Z"
+    },
+    {
+      "id": "sec_revoke_1781416755640",
+      "user_id": "u-teacher",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_vkfqxz6s"
+      },
+      "created_at": "2026-06-14T05:59:15.639Z"
+    },
+    {
+      "id": "sec_fail_1781416804592",
+      "user_id": "u-admin",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T06:00:04.593Z"
+    },
+    {
+      "id": "sec_login_1781416823948",
+      "user_id": "u-admin",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_e2ei3mgb",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T06:00:23.948Z"
+    },
+    {
+      "id": "sec_dev_1781416823948",
+      "user_id": "u-admin",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_e2ei3mgb",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T06:00:23.948Z"
+    },
+    {
+      "id": "sec_revoke_1781417337870",
+      "user_id": "u-admin",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_e2ei3mgb"
+      },
+      "created_at": "2026-06-14T06:08:57.870Z"
+    },
+    {
+      "id": "sec_fail_1781438796620",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T12:06:36.620Z"
+    },
+    {
+      "id": "sec_fail_1781438827054",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T12:07:07.054Z"
+    },
+    {
+      "id": "sec_fail_1781438842037",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T12:07:22.037Z"
+    },
+    {
+      "id": "sec_fail_1781438842404",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "FAILED_LOGIN",
+      "severity": "MEDIUM",
+      "metadata": {
+        "reason": "كلمة مرور خاطئة للمدير العام",
+        "ip": "::1",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T12:07:22.404Z"
+    },
+    {
+      "id": "sec_login_1781439772852",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_ced8f13d",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T12:22:52.852Z"
+    },
+    {
+      "id": "sec_dev_1781439772852",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_ced8f13d",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T12:22:52.852Z"
+    },
+    {
+      "id": "sec_revoke_1781439941317",
+      "user_id": "u-teacher",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_ced8f13d"
+      },
+      "created_at": "2026-06-14T12:25:41.317Z"
+    },
+    {
+      "id": "sec_evt_178144890664747enwwtd8",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T14:55:06.647Z"
+    },
+    {
+      "id": "sec_login_1781448906647",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_q5p963dl",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T14:55:06.647Z"
+    },
+    {
+      "id": "sec_dev_1781448906647",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_q5p963dl",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T14:55:06.647Z"
+    },
+    {
+      "id": "sec_revoke_1781449116450",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_q5p963dl"
+      },
+      "created_at": "2026-06-14T14:58:36.450Z"
+    },
+    {
+      "id": "sec_login_1781449135742",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_5e2l648k",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T14:58:55.742Z"
+    },
+    {
+      "id": "sec_dev_1781449135742",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_5e2l648k",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T14:58:55.742Z"
+    },
+    {
+      "id": "sec_login_1781449374189",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_8xh3jepj",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:02:54.189Z"
+    },
+    {
+      "id": "sec_dev_1781449374189",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_8xh3jepj",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T15:02:54.189Z"
+    },
+    {
+      "id": "sec_revoke_1781449394473",
+      "user_id": "u-teacher",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_8xh3jepj"
+      },
+      "created_at": "2026-06-14T15:03:14.473Z"
+    },
+    {
+      "id": "sec_login_1781449520661",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_s2uznhw5",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:05:20.661Z"
+    },
+    {
+      "id": "sec_dev_1781449520661",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_s2uznhw5",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T15:05:20.661Z"
+    },
+    {
+      "id": "sec_evt_1781450044162hkd0qs2j",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T15:14:04.162Z"
+    },
+    {
+      "id": "sec_login_1781450044162",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_x940qrco",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:14:04.162Z"
+    },
+    {
+      "id": "sec_dev_1781450044162",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_x940qrco",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T15:14:04.162Z"
+    },
+    {
+      "id": "sec_revoke_1781450134504",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_x940qrco"
+      },
+      "created_at": "2026-06-14T15:15:34.504Z"
+    },
+    {
+      "id": "sec_evt_1781450919164bbgsmcywn",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T15:28:39.164Z"
+    },
+    {
+      "id": "sec_login_1781450919164",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_ccex8azk",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:28:39.164Z"
+    },
+    {
+      "id": "sec_dev_1781450919164",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_ccex8azk",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T15:28:39.164Z"
+    },
+    {
+      "id": "sec_login_1781451885521",
+      "user_id": "u-admin",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_rsvyietu",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:44:45.521Z"
+    },
+    {
+      "id": "sec_dev_1781451885521",
+      "user_id": "u-admin",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_rsvyietu",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T15:44:45.521Z"
+    },
+    {
+      "id": "sec_revoke_1781451967393",
+      "user_id": "u-admin",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_rsvyietu"
+      },
+      "created_at": "2026-06-14T15:46:07.393Z"
+    },
+    {
+      "id": "sec_evt_1781451976985drfsz2ctl",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T15:46:16.985Z"
+    },
+    {
+      "id": "sec_login_1781451976985",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_f89al6v3",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:46:16.985Z"
+    },
+    {
+      "id": "sec_dev_1781451976985",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_f89al6v3",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T15:46:16.985Z"
+    },
+    {
+      "id": "sec_login_1781453382966",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_0ekbn4y4",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T16:09:42.966Z"
+    },
+    {
+      "id": "sec_dev_1781453382966",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_0ekbn4y4",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T16:09:42.966Z"
+    },
+    {
+      "id": "sec_revoke_1781458813357",
+      "user_id": "u-teacher",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_0ekbn4y4"
+      },
+      "created_at": "2026-06-14T17:40:13.357Z"
+    },
+    {
+      "id": "sec_login_1781458824975",
+      "user_id": "u-admin",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_fjkula2y",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T17:40:24.975Z"
+    },
+    {
+      "id": "sec_dev_1781458824975",
+      "user_id": "u-admin",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_fjkula2y",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T17:40:24.975Z"
+    },
+    {
+      "id": "sec_revoke_1781458959944",
+      "user_id": "u-admin",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_fjkula2y"
+      },
+      "created_at": "2026-06-14T17:42:39.943Z"
+    },
+    {
+      "id": "sec_evt_1781458968263908tdrop",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T17:42:48.263Z"
+    },
+    {
+      "id": "sec_login_1781458968263",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_3axbz3tl",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T17:42:48.263Z"
+    },
+    {
+      "id": "sec_dev_1781458968263",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_3axbz3tl",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T17:42:48.263Z"
+    },
+    {
+      "id": "sec_revoke_1781459292440",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_3axbz3tl"
+      },
+      "created_at": "2026-06-14T17:48:12.440Z"
+    },
+    {
+      "id": "sec_evt_1781465352857hep8kgpjs",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T19:29:12.857Z"
+    },
+    {
+      "id": "sec_login_1781465352857",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_zdblaf9c",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T19:29:12.857Z"
+    },
+    {
+      "id": "sec_dev_1781465352857",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_zdblaf9c",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T19:29:12.857Z"
+    },
+    {
+      "id": "sec_revoke_1781465406703",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_zdblaf9c"
+      },
+      "created_at": "2026-06-14T19:30:06.703Z"
+    },
+    {
+      "id": "sec_login_1781467418757",
+      "user_id": "u-student",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_60u3a4wi",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T20:03:38.757Z"
+    },
+    {
+      "id": "sec_dev_1781467418757",
+      "user_id": "u-student",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_60u3a4wi",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T20:03:38.757Z"
+    },
+    {
+      "id": "sec_revoke_1781467733724",
+      "user_id": "u-student",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_60u3a4wi"
+      },
+      "created_at": "2026-06-14T20:08:53.724Z"
+    },
+    {
+      "id": "sec_evt_17814677444100gf5rvg0w",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T20:09:04.410Z"
+    },
+    {
+      "id": "sec_login_1781467744410",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_5mmema8n",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T20:09:04.410Z"
+    },
+    {
+      "id": "sec_dev_1781467744410",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_5mmema8n",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T20:09:04.410Z"
+    },
+    {
+      "id": "sec_evt_17814686784447hkbef4fq",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T20:24:38.444Z"
+    },
+    {
+      "id": "sec_login_1781468678444",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_oj8cti5a",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T20:24:38.444Z"
+    },
+    {
+      "id": "sec_dev_1781468678444",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_oj8cti5a",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T20:24:38.444Z"
+    },
+    {
+      "id": "sec_revoke_1781468728456",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_oj8cti5a"
+      },
+      "created_at": "2026-06-14T20:25:28.456Z"
+    },
+    {
+      "id": "sec_login_1781474469516",
+      "user_id": "u-admin",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_gis8d9o8",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T22:01:09.516Z"
+    },
+    {
+      "id": "sec_dev_1781474469516",
+      "user_id": "u-admin",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_gis8d9o8",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T22:01:09.516Z"
+    },
+    {
+      "id": "sec_revoke_1781474497472",
+      "user_id": "u-admin",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_gis8d9o8"
+      },
+      "created_at": "2026-06-14T22:01:37.472Z"
+    },
+    {
+      "id": "sec_evt_1781474504661nzr26lbp",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T22:01:44.660Z"
+    },
+    {
+      "id": "sec_login_1781474504661",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_xd2nx0l8",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T22:01:44.660Z"
+    },
+    {
+      "id": "sec_dev_1781474504661",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_xd2nx0l8",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T22:01:44.660Z"
+    },
+    {
+      "id": "sec_evt_1781477898220v234vzeh7",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-14T22:58:18.219Z"
+    },
+    {
+      "id": "sec_login_1781477898220",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_66u3przk",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T22:58:18.219Z"
+    },
+    {
+      "id": "sec_dev_1781477898220",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_66u3przk",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T22:58:18.219Z"
+    },
+    {
+      "id": "sec_revoke_1781477941980",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_66u3przk"
+      },
+      "created_at": "2026-06-14T22:59:01.980Z"
+    },
+    {
+      "id": "sec_login_1781477967739",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_pxt1chvx",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T22:59:27.739Z"
+    },
+    {
+      "id": "sec_dev_1781477967739",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_pxt1chvx",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T22:59:27.739Z"
+    },
+    {
+      "id": "sec_login_1781478320687",
+      "user_id": "u-student",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_xbu5uh9o",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T23:05:20.687Z"
+    },
+    {
+      "id": "sec_dev_1781478320687",
+      "user_id": "u-student",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_xbu5uh9o",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T23:05:20.687Z"
+    },
+    {
+      "id": "sec_revoke_1781478390611",
+      "user_id": "u-student",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_xbu5uh9o"
+      },
+      "created_at": "2026-06-14T23:06:30.611Z"
+    },
+    {
+      "id": "sec_login_1781478400925",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_yru59ine",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T23:06:40.925Z"
+    },
+    {
+      "id": "sec_dev_1781478400925",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_yru59ine",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-14T23:06:40.925Z"
+    },
+    {
+      "id": "sec_revoke_1781483500090",
+      "user_id": "u-teacher",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_yru59ine"
+      },
+      "created_at": "2026-06-15T00:31:40.090Z"
+    },
+    {
+      "id": "sec_evt_1781483519398y4nd9c7je",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-15T00:31:59.397Z"
+    },
+    {
+      "id": "sec_login_1781483519398",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_y679rwrz",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T00:31:59.397Z"
+    },
+    {
+      "id": "sec_dev_1781483519398",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_y679rwrz",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T00:31:59.397Z"
+    },
+    {
+      "id": "sec_revoke_1781515883708",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_y679rwrz"
+      },
+      "created_at": "2026-06-15T09:31:23.708Z"
+    },
+    {
+      "id": "sec_login_1781515951123",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_im7hensu",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T09:32:31.123Z"
+    },
+    {
+      "id": "sec_dev_1781515951123",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_im7hensu",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T09:32:31.123Z"
+    },
+    {
+      "id": "sec_login_1781515985546",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_i5pis02g",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T09:33:05.546Z"
+    },
+    {
+      "id": "sec_dev_1781515985546",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_i5pis02g",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T09:33:05.546Z"
+    },
+    {
+      "id": "sec_revoke_1781519426653",
+      "user_id": "u-teacher",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_i5pis02g"
+      },
+      "created_at": "2026-06-15T10:30:26.652Z"
+    },
+    {
+      "id": "sec_login_1781519433919",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_sx0i5qws",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T10:30:33.919Z"
+    },
+    {
+      "id": "sec_dev_1781519433919",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_sx0i5qws",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T10:30:33.919Z"
+    },
+    {
+      "id": "sec_revoke_1781519445567",
+      "user_id": "u-teacher",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_sx0i5qws"
+      },
+      "created_at": "2026-06-15T10:30:45.567Z"
+    },
+    {
+      "id": "sec_login_1781519452641",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_u8rr0nvd",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T10:30:52.640Z"
+    },
+    {
+      "id": "sec_dev_1781519452641",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_u8rr0nvd",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T10:30:52.640Z"
+    },
+    {
+      "id": "sec_revoke_1781519501736",
+      "user_id": "u-teacher",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_u8rr0nvd"
+      },
+      "created_at": "2026-06-15T10:31:41.736Z"
+    },
+    {
+      "id": "sec_login_1781519531509",
+      "user_id": "u-student",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_rp7z2lc5",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T10:32:11.509Z"
+    },
+    {
+      "id": "sec_dev_1781519531509",
+      "user_id": "u-student",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_rp7z2lc5",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T10:32:11.509Z"
+    },
+    {
+      "id": "sec_revoke_1781519729332",
+      "user_id": "u-student",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_rp7z2lc5"
+      },
+      "created_at": "2026-06-15T10:35:29.332Z"
+    },
+    {
+      "id": "sec_evt_1781520492063wwozyj2an",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-15T10:48:12.063Z"
+    },
+    {
+      "id": "sec_login_1781520492063",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_9x9einsk",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T10:48:12.063Z"
+    },
+    {
+      "id": "sec_dev_1781520492063",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_9x9einsk",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T10:48:12.063Z"
+    },
+    {
+      "id": "sec_revoke_1781539927224",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_9x9einsk"
+      },
+      "created_at": "2026-06-15T16:12:07.224Z"
+    },
+    {
+      "id": "sec_login_1781539936821",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_6fajwjmw",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T16:12:16.821Z"
+    },
+    {
+      "id": "sec_dev_1781539936821",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_6fajwjmw",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T16:12:16.821Z"
+    },
+    {
+      "id": "sec_revoke_1781540576940",
+      "user_id": "u-teacher",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_6fajwjmw"
+      },
+      "created_at": "2026-06-15T16:22:56.937Z"
+    },
+    {
+      "id": "sec_evt_17815406191998usnmoxyi",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-15T16:23:39.198Z"
+    },
+    {
+      "id": "sec_login_1781540619199",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_4bur0g0s",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T16:23:39.198Z"
+    },
+    {
+      "id": "sec_dev_1781540619199",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_4bur0g0s",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T16:23:39.198Z"
+    },
+    {
+      "id": "sec_revoke_1781545013045",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "device_id": "dev_4bur0g0s"
+      },
+      "created_at": "2026-06-15T17:36:53.045Z"
+    },
+    {
+      "id": "sec_evt_1781545022685h9rcg4lzp",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-15T17:37:02.684Z"
+    },
+    {
+      "id": "sec_login_1781545022685",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_aii1a1uf",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T17:37:02.684Z"
+    },
+    {
+      "id": "sec_dev_1781545022685",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_aii1a1uf",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T17:37:02.684Z"
+    },
+    {
+      "id": "sec_login_1781545038211",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_0paeug0e",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T17:37:18.211Z"
+    },
+    {
+      "id": "sec_dev_1781545038211",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_0paeug0e",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T17:37:18.211Z"
+    },
+    {
+      "id": "sec_evt_1781566540260gya3c4e4l",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-15T23:35:40.260Z"
+    },
+    {
+      "id": "sec_login_1781566540261",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_65xabwks",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T23:35:40.260Z"
+    },
+    {
+      "id": "sec_dev_1781566540261",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_65xabwks",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T23:35:40.260Z"
+    },
+    {
+      "id": "sec_evt_1781566673748bshj5fk9s",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-15T23:37:53.747Z"
+    },
+    {
+      "id": "sec_login_1781566673748",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_712pdtr6",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T23:37:53.747Z"
+    },
+    {
+      "id": "sec_dev_1781566673748",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_712pdtr6",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T23:37:53.747Z"
+    },
+    {
+      "id": "sec_evt_178156696785412dwxxb6",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "SESSION_REVOCATION",
+      "severity": "MEDIUM",
+      "metadata": {
+        "info": "تم إلغاء الجلسات السابقة لربط جهاز جديد"
+      },
+      "created_at": "2026-06-15T23:42:47.854Z"
+    },
+    {
+      "id": "sec_login_1781566967854",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_4ba59xjt",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T23:42:47.854Z"
+    },
+    {
+      "id": "sec_dev_1781566967854",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_4ba59xjt",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T23:42:47.854Z"
+    },
+    {
+      "id": "sec_login_1781567173307",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_xcuwe3qp",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T23:46:13.307Z"
+    },
+    {
+      "id": "sec_dev_1781567173307",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_xcuwe3qp",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-15T23:46:13.307Z"
+    }
+  ],
+  "exam_violations": [
+    {
+      "id": "viol_1781413548260xxlq8d9m8",
+      "exam_id": "اختبار زمن المضارع البسيط والمسند",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "violation_type": "EXAM_VIOLATION",
+      "timestamp": "2026-06-14T05:05:48.260Z",
+      "metadata": {
+        "details": "٨:٠٥:٢٣ ص - الخروج من وضع ملء الشاشة (Fullscreen Exited)"
+      }
+    }
+  ],
+  "watch_progress": [],
+  "video_notes": [],
+  "download_history": [],
+  "activity_timeline": [
+    {
+      "id": "timeline_1781413208462",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T05:00:08.462Z"
+    },
+    {
+      "id": "timeline_exam_1781413227494",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "type": "exam",
+      "metadata": {
+        "examId": "4b9a1d48-6a3f-4e0d-88b1-12c4d5e6f7a8",
+        "score": 0,
+        "passed": false,
+        "violationsCount": 0
+      },
+      "created_at": "2026-06-14T05:00:27.494Z"
+    },
+    {
+      "id": "timeline_exam_1781413548266",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "type": "exam",
+      "metadata": {
+        "examId": "4b9a1d48-6a3f-4e0d-88b1-12c4d5e6f7a8",
+        "score": 0,
+        "passed": false,
+        "violationsCount": 1
+      },
+      "created_at": "2026-06-14T05:05:48.266Z"
+    },
+    {
+      "id": "timeline_exam_1781414180571",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "type": "exam",
+      "metadata": {
+        "examId": "4b9a1d48-6a3f-4e0d-88b1-12c4d5e6f7a8",
+        "score": 100,
+        "passed": true,
+        "violationsCount": 0
+      },
+      "created_at": "2026-06-14T05:16:20.571Z"
+    },
+    {
+      "id": "timeline_cert_1781414180571",
+      "user_id": "9bac6cb2-2f43-4206-a303-d788c77f7c17",
+      "type": "certificate",
+      "metadata": {
+        "examId": "4b9a1d48-6a3f-4e0d-88b1-12c4d5e6f7a8",
+        "score": 100
+      },
+      "created_at": "2026-06-14T05:16:20.571Z"
+    },
+    {
+      "id": "timeline_1781415578501",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T05:39:38.501Z"
+    },
+    {
+      "id": "timeline_revoke_1781416755640",
+      "user_id": "u-teacher",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T05:59:15.639Z"
+    },
+    {
+      "id": "timeline_1781416823948",
+      "user_id": "u-admin",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T06:00:23.948Z"
+    },
+    {
+      "id": "timeline_revoke_1781417337870",
+      "user_id": "u-admin",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T06:08:57.870Z"
+    },
+    {
+      "id": "timeline_1781439772852",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T12:22:52.852Z"
+    },
+    {
+      "id": "timeline_revoke_1781439941317",
+      "user_id": "u-teacher",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T12:25:41.317Z"
+    },
+    {
+      "id": "timeline_1781448906647",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T14:55:06.647Z"
+    },
+    {
+      "id": "timeline_revoke_1781449116450",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T14:58:36.450Z"
+    },
+    {
+      "id": "timeline_1781449135742",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T14:58:55.742Z"
+    },
+    {
+      "id": "timeline_1781449374189",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:02:54.189Z"
+    },
+    {
+      "id": "timeline_revoke_1781449394473",
+      "user_id": "u-teacher",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T15:03:14.473Z"
+    },
+    {
+      "id": "timeline_1781449520661",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:05:20.661Z"
+    },
+    {
+      "id": "timeline_1781450044162",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:14:04.162Z"
+    },
+    {
+      "id": "timeline_revoke_1781450134504",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T15:15:34.504Z"
+    },
+    {
+      "id": "timeline_1781450919164",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:28:39.164Z"
+    },
+    {
+      "id": "timeline_1781451885521",
+      "user_id": "u-admin",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:44:45.521Z"
+    },
+    {
+      "id": "timeline_revoke_1781451967393",
+      "user_id": "u-admin",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T15:46:07.393Z"
+    },
+    {
+      "id": "timeline_1781451976985",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T15:46:16.985Z"
+    },
+    {
+      "id": "timeline_1781453382966",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T16:09:42.966Z"
+    },
+    {
+      "id": "timeline_revoke_1781458813357",
+      "user_id": "u-teacher",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T17:40:13.357Z"
+    },
+    {
+      "id": "timeline_1781458824975",
+      "user_id": "u-admin",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T17:40:24.975Z"
+    },
+    {
+      "id": "timeline_revoke_1781458959944",
+      "user_id": "u-admin",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T17:42:39.943Z"
+    },
+    {
+      "id": "timeline_1781458968263",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T17:42:48.263Z"
+    },
+    {
+      "id": "timeline_revoke_1781459292440",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T17:48:12.440Z"
+    },
+    {
+      "id": "timeline_1781465352857",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T19:29:12.857Z"
+    },
+    {
+      "id": "timeline_revoke_1781465406703",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T19:30:06.703Z"
+    },
+    {
+      "id": "timeline_1781467418757",
+      "user_id": "u-student",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T20:03:38.757Z"
+    },
+    {
+      "id": "timeline_revoke_1781467733725",
+      "user_id": "u-student",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T20:08:53.724Z"
+    },
+    {
+      "id": "timeline_1781467744410",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T20:09:04.410Z"
+    },
+    {
+      "id": "timeline_1781468678444",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T20:24:38.444Z"
+    },
+    {
+      "id": "timeline_revoke_1781468728456",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T20:25:28.456Z"
+    },
+    {
+      "id": "timeline_1781474469516",
+      "user_id": "u-admin",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T22:01:09.516Z"
+    },
+    {
+      "id": "timeline_revoke_1781474497473",
+      "user_id": "u-admin",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T22:01:37.472Z"
+    },
+    {
+      "id": "timeline_1781474504661",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T22:01:44.660Z"
+    },
+    {
+      "id": "timeline_1781477898220",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T22:58:18.219Z"
+    },
+    {
+      "id": "timeline_revoke_1781477941980",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T22:59:01.980Z"
+    },
+    {
+      "id": "timeline_1781477967739",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T22:59:27.739Z"
+    },
+    {
+      "id": "timeline_1781478320687",
+      "user_id": "u-student",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T23:05:20.687Z"
+    },
+    {
+      "id": "timeline_revoke_1781478390611",
+      "user_id": "u-student",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-14T23:06:30.611Z"
+    },
+    {
+      "id": "timeline_1781478400925",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-14T23:06:40.925Z"
+    },
+    {
+      "id": "timeline_revoke_1781483500090",
+      "user_id": "u-teacher",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-15T00:31:40.090Z"
+    },
+    {
+      "id": "timeline_1781483519398",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T00:31:59.397Z"
+    },
+    {
+      "id": "timeline_revoke_1781515883708",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-15T09:31:23.708Z"
+    },
+    {
+      "id": "timeline_1781515951123",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T09:32:31.123Z"
+    },
+    {
+      "id": "timeline_1781515985546",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T09:33:05.546Z"
+    },
+    {
+      "id": "timeline_revoke_1781519426653",
+      "user_id": "u-teacher",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-15T10:30:26.652Z"
+    },
+    {
+      "id": "timeline_1781519433919",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T10:30:33.919Z"
+    },
+    {
+      "id": "timeline_revoke_1781519445567",
+      "user_id": "u-teacher",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-15T10:30:45.567Z"
+    },
+    {
+      "id": "timeline_1781519452641",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T10:30:52.640Z"
+    },
+    {
+      "id": "timeline_revoke_1781519501736",
+      "user_id": "u-teacher",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-15T10:31:41.736Z"
+    },
+    {
+      "id": "timeline_1781519531509",
+      "user_id": "u-student",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T10:32:11.509Z"
+    },
+    {
+      "id": "timeline_revoke_1781519729332",
+      "user_id": "u-student",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-15T10:35:29.332Z"
+    },
+    {
+      "id": "timeline_1781520492063",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T10:48:12.063Z"
+    },
+    {
+      "id": "timeline_revoke_1781539927225",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-15T16:12:07.224Z"
+    },
+    {
+      "id": "timeline_1781539936821",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T16:12:16.821Z"
+    },
+    {
+      "id": "timeline_revoke_1781540576940",
+      "user_id": "u-teacher",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-15T16:22:56.937Z"
+    },
+    {
+      "id": "timeline_1781540619199",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T16:23:39.198Z"
+    },
+    {
+      "id": "timeline_revoke_1781545013045",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "logout",
+      "metadata": {
+        "info": "تم إنهاء الجلسة عن بعد"
+      },
+      "created_at": "2026-06-15T17:36:53.045Z"
+    },
+    {
+      "id": "timeline_1781545022685",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T17:37:02.684Z"
+    },
+    {
+      "id": "timeline_1781545038211",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T17:37:18.211Z"
+    },
+    {
+      "id": "timeline_1781566540261",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T23:35:40.260Z"
+    },
+    {
+      "id": "timeline_1781566673748",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T23:37:53.747Z"
+    },
+    {
+      "id": "timeline_1781566967854",
+      "user_id": "u-super-mogenix-1781399884168",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T23:42:47.854Z"
+    },
+    {
+      "id": "timeline_1781567173307",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-15T23:46:13.307Z"
+    }
+  ],
+  "simulation_sessions": [
+    {
+      "id": "fdf27e1b-838a-492c-95de-19d2094d7798",
+      "simulationToken": "e7b274347730f18c985e91be61cb29f4e75f313be41a1a3548979806f7846c20",
+      "targetUserId": "9739b80e-9bd3-4042-9979-6e8e81677bcb",
+      "realAdminId": "cb66949a-7b7c-4916-b55c-c65175fc77cd",
+      "targetRole": "TEACHER",
+      "readOnlyMode": false,
+      "interactiveMode": false,
+      "expiresAt": "2026-06-16T00:07:32.737Z",
+      "isActive": true
+    },
+    {
+      "id": "f64bf906-36be-442e-9a60-9f1191b07294",
+      "simulationToken": "22fe90ef6312909a5d245e0cfe1712b3adf322f656ea7c60af56ea0fdb49ed3b",
+      "targetUserId": "b54d13e0-bea0-4300-9f63-4fc010b62853",
+      "realAdminId": "cb66949a-7b7c-4916-b55c-c65175fc77cd",
+      "targetRole": "STUDENT",
+      "readOnlyMode": true,
+      "interactiveMode": false,
+      "expiresAt": "2026-06-16T00:12:27.490Z",
+      "isActive": true
+    }
+  ],
+  "simulation_audit_logs": [],
+  "simulation_sandboxes": [],
+  "admins": [
+    {
+      "id": "adm-super-mogenix-1781399884168",
+      "user_id": "u-super-mogenix-1781399884168",
+      "created_at": "2026-06-14T01:18:04.168Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": "role-super-1781399884168",
+      "name": "SUPER_ADMIN",
+      "description": "Super Admin Role"
+    }
+  ],
+  "permissions": [
+    {
+      "id": "perm-admin-management-1781399884168",
+      "name": "Admin Management",
+      "description": "Permission for Admin Management"
+    },
+    {
+      "id": "perm-rbac-1781399884168",
+      "name": "RBAC",
+      "description": "Permission for RBAC"
+    },
+    {
+      "id": "perm-security-center-1781399884169",
+      "name": "Security Center",
+      "description": "Permission for Security Center"
+    },
+    {
+      "id": "perm-sessions-&-devices-1781399884169",
+      "name": "Sessions & Devices",
+      "description": "Permission for Sessions & Devices"
+    },
+    {
+      "id": "perm-audit-logs-1781399884169",
+      "name": "Audit Logs",
+      "description": "Permission for Audit Logs"
+    },
+    {
+      "id": "perm-rate-limits-1781399884169",
+      "name": "Rate Limits",
+      "description": "Permission for Rate Limits"
+    },
+    {
+      "id": "perm-users-1781399884169",
+      "name": "Users",
+      "description": "Permission for Users"
+    },
+    {
+      "id": "perm-courses-1781399884169",
+      "name": "Courses",
+      "description": "Permission for Courses"
+    },
+    {
+      "id": "perm-payments-1781399884169",
+      "name": "Payments",
+      "description": "Permission for Payments"
+    },
+    {
+      "id": "perm-notifications-1781399884169",
+      "name": "Notifications",
+      "description": "Permission for Notifications"
+    },
+    {
+      "id": "perm-analytics-1781399884169",
+      "name": "Analytics",
+      "description": "Permission for Analytics"
+    },
+    {
+      "id": "perm-altiora-ai-1781399884169",
+      "name": "Altiora AI",
+      "description": "Permission for Altiora AI"
+    },
+    {
+      "id": "perm-site-settings-1781399884169",
+      "name": "Site Settings",
+      "description": "Permission for Site Settings"
+    },
+    {
+      "id": "perm-maintenance-mode-1781399884169",
+      "name": "Maintenance Mode",
+      "description": "Permission for Maintenance Mode"
+    },
+    {
+      "id": "perm-backup-&-restore-1781399884169",
+      "name": "Backup & Restore",
+      "description": "Permission for Backup & Restore"
+    }
+  ],
+  "rolePermissions": [
+    {
+      "id": "rp-1781399884168uvrjdfxv",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-admin-management-1781399884168"
+    },
+    {
+      "id": "rp-1781399884169rejvx3y4",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-rbac-1781399884168"
+    },
+    {
+      "id": "rp-1781399884169o4ykl9gm",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-security-center-1781399884169"
+    },
+    {
+      "id": "rp-1781399884169eeekgua6r",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-sessions-&-devices-1781399884169"
+    },
+    {
+      "id": "rp-17813998841692i713kpm8",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-audit-logs-1781399884169"
+    },
+    {
+      "id": "rp-17813998841691untj6ogt",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-rate-limits-1781399884169"
+    },
+    {
+      "id": "rp-1781399884169izfomrqcf",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-users-1781399884169"
+    },
+    {
+      "id": "rp-17813998841696qgs5vi5",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-courses-1781399884169"
+    },
+    {
+      "id": "rp-1781399884169bbszfhgaf",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-payments-1781399884169"
+    },
+    {
+      "id": "rp-1781399884169uixvv859o",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-notifications-1781399884169"
+    },
+    {
+      "id": "rp-17813998841699oebgrqbo",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-analytics-1781399884169"
+    },
+    {
+      "id": "rp-1781399884169ucbot00yl",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-altiora-ai-1781399884169"
+    },
+    {
+      "id": "rp-1781399884169yofbsqe8",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-site-settings-1781399884169"
+    },
+    {
+      "id": "rp-1781399884169ilwuvkf8a",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-maintenance-mode-1781399884169"
+    },
+    {
+      "id": "rp-1781399884169n2429gq6l",
+      "roleId": "role-super-1781399884168",
+      "permissionId": "perm-backup-&-restore-1781399884169"
+    }
+  ]
+}

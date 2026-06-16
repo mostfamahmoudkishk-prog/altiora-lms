@@ -1,0 +1,633 @@
+{
+  "User": [
+    {
+      "id": "cb66949a-7b7c-4916-b55c-c65175fc77cd",
+      "email": "mostfamahmoudkishk@gmail.com",
+      "passwordHash": "$2b$10$J6kn2Z3jjKm9mund3jtkQeh3HhhE6e2liWASJm4jF4td9ASShNm3i",
+      "role": "SUPER_ADMIN",
+      "created_at": "2026-06-14T00:28:50.013Z",
+      "updated_at": "2026-06-14T00:28:50.013Z",
+      "deleted_at": null
+    },
+    {
+      "id": "ffcba76c-e58c-403e-b011-8b51942dae89",
+      "email": "admin@altiora.com",
+      "passwordHash": "admin123",
+      "role": "ADMIN",
+      "created_at": "2026-06-14T00:28:51.097Z",
+      "updated_at": "2026-06-14T00:28:51.097Z",
+      "deleted_at": null
+    },
+    {
+      "id": "9739b80e-9bd3-4042-9979-6e8e81677bcb",
+      "email": "teacher@altiora.com",
+      "passwordHash": "teacher123",
+      "role": "TEACHER",
+      "created_at": "2026-06-14T00:28:51.516Z",
+      "updated_at": "2026-06-14T00:28:51.516Z",
+      "deleted_at": null
+    },
+    {
+      "id": "b54d13e0-bea0-4300-9f63-4fc010b62853",
+      "email": "student@altiora.com",
+      "passwordHash": "student123",
+      "role": "STUDENT",
+      "created_at": "2026-06-14T00:28:52.249Z",
+      "updated_at": "2026-06-14T00:28:52.249Z",
+      "deleted_at": null
+    }
+  ],
+  "Profile": [
+    {
+      "id": "4e02caab-0008-4ba9-9f58-aa81f8c24959",
+      "userId": "cb66949a-7b7c-4916-b55c-c65175fc77cd",
+      "name": "Mostafa Mahmoud Kishk",
+      "avatarUrl": null,
+      "biography": "المدير العام والمطور الأساسي لمنصة التيورا التعليمية",
+      "credentials": null,
+      "created_at": "2026-06-14T00:28:50.534Z",
+      "updated_at": "2026-06-14T00:28:50.534Z",
+      "deleted_at": null
+    },
+    {
+      "id": "366eb620-0f03-4bfd-b00e-139afcbd9722",
+      "userId": "ffcba76c-e58c-403e-b011-8b51942dae89",
+      "name": "مسؤول النظام",
+      "avatarUrl": null,
+      "biography": "مدير العمليات والدعم الفني للمنصة",
+      "credentials": null,
+      "created_at": "2026-06-14T00:28:51.290Z",
+      "updated_at": "2026-06-14T00:28:51.290Z",
+      "deleted_at": null
+    },
+    {
+      "id": "c5a1e864-aa00-405a-9fde-b632b7dfb967",
+      "userId": "9739b80e-9bd3-4042-9979-6e8e81677bcb",
+      "name": "أ. أحمد علي",
+      "avatarUrl": null,
+      "biography": "مدرس خبير لمادة اللغة الإنجليزية بخبرة تزيد عن 15 عاماً",
+      "credentials": "ماجستير المناهج وطرق التدريس من جامعة عين شمس",
+      "created_at": "2026-06-14T00:28:51.747Z",
+      "updated_at": "2026-06-14T00:28:51.747Z",
+      "deleted_at": null
+    },
+    {
+      "id": "ac244064-e4ce-46c4-95b0-972dd69cbf9c",
+      "userId": "b54d13e0-bea0-4300-9f63-4fc010b62853",
+      "name": "عمر خالد",
+      "avatarUrl": null,
+      "biography": "طالب بالصف الثالث الثانوي",
+      "credentials": null,
+      "created_at": "2026-06-14T00:28:52.512Z",
+      "updated_at": "2026-06-14T00:28:52.512Z",
+      "deleted_at": null
+    }
+  ],
+  "Session": [],
+  "Device": [],
+  "LoginHistory": [],
+  "Category": [
+    {
+      "id": "f319bcff-7aff-498e-a6ef-1aa2e97f446d",
+      "name": "اللغة الإنجليزية",
+      "description": "شرح شامل ومبسط لقواعد ومفردات اللغة الإنجليزية لجميع المستويات",
+      "created_at": "2026-06-14T00:28:55.118Z",
+      "updated_at": "2026-06-14T00:28:55.118Z",
+      "deleted_at": null
+    }
+  ],
+  "Course": [
+    {
+      "id": "78bd8382-6466-472b-937e-44de74a122f6",
+      "title": "Epic Grammar 2026",
+      "description": "شرح قواعد اللغة الإنجليزية الشامل لجميع المراحل الثانوية والشهادة الإعدادية بالتفصيل وحل التدريبات المكثفة.",
+      "price": "500",
+      "coverImage": "https://storage.googleapis.com/gpt-engineer-file-uploads/AEsg1zggI4VE8xKalvu5HewFjSF2/social-images/social-1780788475646-image_(6).webp",
+      "categoryId": "f319bcff-7aff-498e-a6ef-1aa2e97f446d",
+      "isArchived": false,
+      "isFeatured": true,
+      "created_at": "2026-06-14T00:28:55.406Z",
+      "updated_at": "2026-06-14T00:28:55.406Z",
+      "deleted_at": null
+    }
+  ],
+  "CourseInstructor": [
+    {
+      "id": "1be3062b-3d5b-4b2b-b077-6044d0cc3765",
+      "courseId": "78bd8382-6466-472b-937e-44de74a122f6",
+      "instructorId": "9739b80e-9bd3-4042-9979-6e8e81677bcb",
+      "commissionRate": "85",
+      "created_at": "2026-06-14T00:28:55.702Z",
+      "updated_at": "2026-06-14T00:28:55.702Z",
+      "deleted_at": null
+    }
+  ],
+  "Module": [
+    {
+      "id": "e87a7410-c96b-4cbf-a245-d72603a8b34b",
+      "courseId": "78bd8382-6466-472b-937e-44de74a122f6",
+      "title": "الوحدة الأولى: Present Tenses (الأزمنة الحاضرة)",
+      "sortOrder": 1,
+      "created_at": "2026-06-14T00:28:55.999Z",
+      "updated_at": "2026-06-14T00:28:55.999Z",
+      "deleted_at": null
+    }
+  ],
+  "Lesson": [
+    {
+      "id": "06c10280-18ca-450f-857c-cf7adf637531",
+      "moduleId": "e87a7410-c96b-4cbf-a245-d72603a8b34b",
+      "title": "Present Simple & Continuous",
+      "sortOrder": 1,
+      "isPreview": true,
+      "created_at": "2026-06-14T00:28:56.317Z",
+      "updated_at": "2026-06-14T00:28:56.317Z",
+      "deleted_at": null
+    }
+  ],
+  "Attachment": [],
+  "PdfFile": [
+    {
+      "id": "a5b408a4-015b-4304-8b4a-a0c0f0fe62eb",
+      "lessonId": "06c10280-18ca-450f-857c-cf7adf637531",
+      "title": "ملخص شرح زمن المضارع البسيط والمستمر PDF",
+      "fileUrl": "http://example.com/grammar-pdf.pdf",
+      "created_at": "2026-06-14T00:28:56.652Z",
+      "updated_at": "2026-06-14T00:28:56.652Z",
+      "deleted_at": null
+    }
+  ],
+  "VideoMetadata": [
+    {
+      "id": "a6758151-2938-4251-9e57-0e426bc842b6",
+      "lessonId": "06c10280-18ca-450f-857c-cf7adf637531",
+      "videoUrl": "http://example.com/video1.mp4",
+      "duration": 1800,
+      "size": "245670890",
+      "created_at": "2026-06-14T00:28:57.003Z",
+      "updated_at": "2026-06-14T00:28:57.003Z",
+      "deleted_at": null
+    }
+  ],
+  "CourseReview": [],
+  "Video": [],
+  "WatchHistory": [],
+  "ContinueWatching": [],
+  "VideoNote": [],
+  "Enrollment": [],
+  "StudentProgress": [],
+  "ActivityTimeline": [],
+  "SavedNote": [],
+  "Wishlist": [],
+  "RecentlyViewed": [],
+  "DownloadedFileHistory": [],
+  "StudentAccessCode": [],
+  "Exam": [
+    {
+      "id": "da73fab0-92f2-43e2-b2fd-6e32c6fd0290",
+      "lessonId": "06c10280-18ca-450f-857c-cf7adf637531",
+      "courseId": "78bd8382-6466-472b-937e-44de74a122f6",
+      "title": "اختبار زمن المضارع البسيط",
+      "durationLimit": 15,
+      "passScore": "60",
+      "maxAttempts": 3,
+      "created_at": "2026-06-14T00:28:57.378Z",
+      "updated_at": "2026-06-14T00:28:57.378Z",
+      "deleted_at": null
+    }
+  ],
+  "Question": [
+    {
+      "id": "4020fa3d-b56d-4b9a-b9b0-b19de77922d5",
+      "examId": "da73fab0-92f2-43e2-b2fd-6e32c6fd0290",
+      "text": "He _______ to school every day.",
+      "type": "MCQ",
+      "sortOrder": 1,
+      "points": 5,
+      "created_at": "2026-06-14T00:28:57.785Z",
+      "updated_at": "2026-06-14T00:28:57.785Z",
+      "deleted_at": null
+    }
+  ],
+  "Choice": [
+    {
+      "id": "c41d70a3-029b-4040-b76a-10e0187b3791",
+      "questionId": "4020fa3d-b56d-4b9a-b9b0-b19de77922d5",
+      "text": "go",
+      "isCorrect": false,
+      "sortOrder": 1,
+      "created_at": "2026-06-14T00:28:58.192Z",
+      "updated_at": "2026-06-14T00:28:58.192Z",
+      "deleted_at": null
+    },
+    {
+      "id": "17300820-cec5-411f-87e4-675921de7624",
+      "questionId": "4020fa3d-b56d-4b9a-b9b0-b19de77922d5",
+      "text": "goes",
+      "isCorrect": true,
+      "sortOrder": 2,
+      "created_at": "2026-06-14T00:28:58.192Z",
+      "updated_at": "2026-06-14T00:28:58.192Z",
+      "deleted_at": null
+    },
+    {
+      "id": "748b5742-c7f8-4b16-8b88-57837426cb7c",
+      "questionId": "4020fa3d-b56d-4b9a-b9b0-b19de77922d5",
+      "text": "going",
+      "isCorrect": false,
+      "sortOrder": 3,
+      "created_at": "2026-06-14T00:28:58.192Z",
+      "updated_at": "2026-06-14T00:28:58.192Z",
+      "deleted_at": null
+    },
+    {
+      "id": "4f11a45f-739b-4528-904f-bd592775d827",
+      "questionId": "4020fa3d-b56d-4b9a-b9b0-b19de77922d5",
+      "text": "went",
+      "isCorrect": false,
+      "sortOrder": 4,
+      "created_at": "2026-06-14T00:28:58.192Z",
+      "updated_at": "2026-06-14T00:28:58.192Z",
+      "deleted_at": null
+    }
+  ],
+  "ExamAttempt": [],
+  "ExamViolation": [],
+  "AntiCheatEvent": [],
+  "Order": [],
+  "Transaction": [],
+  "Refund": [],
+  "Coupon": [],
+  "Certificate": [],
+  "Comment": [],
+  "Discussion": [],
+  "QuestionDiscussion": [],
+  "AnswerDiscussion": [],
+  "Notification": [],
+  "EmailNotification": [],
+  "PushNotification": [],
+  "Ticket": [],
+  "Reply": [],
+  "Complaint": [],
+  "Faq": [
+    {
+      "id": "1c2577f5-0f65-4c6d-a85e-00baebe18241",
+      "question": "كيف يمكنني تفعيل الكود التعليمي الخاص بي؟",
+      "answer": "يمكنك إدخال الكود المستلم من المدرس مباشرة في صفحة تفعيل الأكواد لتفتح لك الدورة التعليمية فوراً.",
+      "category": "TECHNICAL",
+      "sortOrder": 1,
+      "created_at": "2026-06-14T00:28:54.196Z",
+      "updated_at": "2026-06-14T00:28:54.196Z",
+      "deleted_at": null
+    },
+    {
+      "id": "bbab1084-99b3-4773-ad5e-5d990995cc68",
+      "question": "هل تعمل المنصة على الهواتف والأجهزة اللوحية؟",
+      "answer": "نعم، المنصة متوافقة 100% مع الهواتف الذكية والأجهزة اللوحية وتقدم تجربة استخدام ممتازة وسلسة.",
+      "category": "GENERAL",
+      "sortOrder": 2,
+      "created_at": "2026-06-14T00:28:54.976Z",
+      "updated_at": "2026-06-14T00:28:54.976Z",
+      "deleted_at": null
+    }
+  ],
+  "WatchTimeAnalytics": [],
+  "RevenueAnalytics": [],
+  "AuditLog": [],
+  "SecurityEvent": [],
+  "SuspiciousActivity": [],
+  "Role": [
+    {
+      "id": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "name": "SUPER_ADMIN",
+      "description": "المدير العام للمنصة - صلاحيات كاملة",
+      "created_at": "2026-06-14T00:28:41.919Z",
+      "updated_at": "2026-06-14T00:28:41.919Z",
+      "deleted_at": null
+    },
+    {
+      "id": "69161f56-05e6-4fea-b862-273df2dad8d9",
+      "name": "ADMIN",
+      "description": "مسؤول نظام - إدارة المحتوى والعمليات اليومية",
+      "created_at": "2026-06-14T00:28:42.322Z",
+      "updated_at": "2026-06-14T00:28:42.322Z",
+      "deleted_at": null
+    },
+    {
+      "id": "93e216e8-84eb-4202-ac04-e9027ea9fea0",
+      "name": "TEACHER",
+      "description": "مدرس - إدارة الدورات والدروس والطلاب والتقييمات",
+      "created_at": "2026-06-14T00:28:42.527Z",
+      "updated_at": "2026-06-14T00:28:42.527Z",
+      "deleted_at": null
+    },
+    {
+      "id": "edb50571-52fb-467c-bb35-6164adc36b5d",
+      "name": "STUDENT",
+      "description": "طالب - تصفح، شراء، مشاهدة الدروس وحل الاختبارات",
+      "created_at": "2026-06-14T00:28:42.740Z",
+      "updated_at": "2026-06-14T00:28:42.740Z",
+      "deleted_at": null
+    }
+  ],
+  "Permission": [
+    {
+      "id": "8e74dbaa-2831-471f-aced-13250f72cffd",
+      "name": "view_super_admin_dashboard",
+      "description": "عرض لوحة المدير العام",
+      "created_at": "2026-06-14T00:28:42.952Z",
+      "updated_at": "2026-06-14T00:28:42.952Z",
+      "deleted_at": null
+    },
+    {
+      "id": "ad748cd6-b496-4e50-8f12-53edfd6bbb2a",
+      "name": "manage_admins",
+      "description": "إدارة المسؤولين والأدوار",
+      "created_at": "2026-06-14T00:28:43.500Z",
+      "updated_at": "2026-06-14T00:28:43.500Z",
+      "deleted_at": null
+    },
+    {
+      "id": "b983f300-c8ee-4be9-975b-060010ddd7fe",
+      "name": "view_admin_dashboard",
+      "description": "عرض لوحة المسؤول",
+      "created_at": "2026-06-14T00:28:43.690Z",
+      "updated_at": "2026-06-14T00:28:43.690Z",
+      "deleted_at": null
+    },
+    {
+      "id": "c1edb9d9-a240-448d-8ad2-d054e0cd29dc",
+      "name": "manage_users",
+      "description": "إدارة حسابات المستخدمين والطلاب",
+      "created_at": "2026-06-14T00:28:43.877Z",
+      "updated_at": "2026-06-14T00:28:43.877Z",
+      "deleted_at": null
+    },
+    {
+      "id": "33dd69b7-0f4a-461e-baff-b0ce025131d3",
+      "name": "manage_teachers",
+      "description": "إعتماد وتعديل حسابات المعلمين",
+      "created_at": "2026-06-14T00:28:44.071Z",
+      "updated_at": "2026-06-14T00:28:44.071Z",
+      "deleted_at": null
+    },
+    {
+      "id": "35514a85-517d-4c14-8783-c8159de739ab",
+      "name": "manage_courses",
+      "description": "إدارة الدورات والمحتوى التعليمي",
+      "created_at": "2026-06-14T00:28:44.276Z",
+      "updated_at": "2026-06-14T00:28:44.276Z",
+      "deleted_at": null
+    },
+    {
+      "id": "edaaf444-f6ba-4b4f-bd29-71ca91914192",
+      "name": "view_teacher_dashboard",
+      "description": "عرض لوحة المعلم",
+      "created_at": "2026-06-14T00:28:44.492Z",
+      "updated_at": "2026-06-14T00:28:44.492Z",
+      "deleted_at": null
+    },
+    {
+      "id": "2a1a026a-3123-4773-be98-6c99ef2a2e5f",
+      "name": "manage_assigned_courses",
+      "description": "تعديل محتوى الدورات المسندة",
+      "created_at": "2026-06-14T00:28:44.713Z",
+      "updated_at": "2026-06-14T00:28:44.713Z",
+      "deleted_at": null
+    },
+    {
+      "id": "3ff520b0-c0f6-475f-8b4f-36e566b947f8",
+      "name": "manage_question_bank",
+      "description": "إدارة بنك الاختبارات والأسئلة",
+      "created_at": "2026-06-14T00:28:44.938Z",
+      "updated_at": "2026-06-14T00:28:44.938Z",
+      "deleted_at": null
+    },
+    {
+      "id": "2cd03bf7-4843-4dad-8227-cdb2e2df212d",
+      "name": "manage_payments",
+      "description": "إدارة ومتابعة العمليات المالية",
+      "created_at": "2026-06-14T00:28:45.164Z",
+      "updated_at": "2026-06-14T00:28:45.164Z",
+      "deleted_at": null
+    },
+    {
+      "id": "2172c635-8eb3-4a16-835e-3cc6a88eae23",
+      "name": "manage_settings",
+      "description": "تعديل إعدادات المنصة العامة",
+      "created_at": "2026-06-14T00:28:45.399Z",
+      "updated_at": "2026-06-14T00:28:45.399Z",
+      "deleted_at": null
+    }
+  ],
+  "SiteSetting": [
+    {
+      "id": "d195c9c9-a181-4123-b795-810158858ffc",
+      "key": "site_name",
+      "value": "Altiora - التيورا",
+      "description": null,
+      "created_at": "2026-06-14T00:28:52.842Z",
+      "updated_at": "2026-06-14T00:28:52.842Z",
+      "deleted_at": null
+    },
+    {
+      "id": "60626843-3d89-49b9-8543-0e1ae33deb76",
+      "key": "site_logo",
+      "value": "https://storage.googleapis.com/gpt-engineer-file-uploads/AEsg1zggI4VE8xKalvu5HewFjSF2/social-images/social-1780788475646-image_(6).webp",
+      "description": null,
+      "created_at": "2026-06-14T00:28:53.279Z",
+      "updated_at": "2026-06-14T00:28:53.279Z",
+      "deleted_at": null
+    },
+    {
+      "id": "6de8363e-c6b0-4edb-84bd-e5a442ec8932",
+      "key": "seo_description",
+      "value": "منصة التيورا التعليمية لتقديم أفضل الدورات لجميع المراحل الدراسية بأحدث الأساليب التفاعلية.",
+      "description": null,
+      "created_at": "2026-06-14T00:28:53.599Z",
+      "updated_at": "2026-06-14T00:28:53.599Z",
+      "deleted_at": null
+    },
+    {
+      "id": "3f6c393b-9ddd-4981-814a-c32f9f652b83",
+      "key": "maintenance_mode",
+      "value": "false",
+      "description": null,
+      "created_at": "2026-06-14T00:28:53.895Z",
+      "updated_at": "2026-06-14T00:28:53.895Z",
+      "deleted_at": null
+    }
+  ],
+  "Banner": [],
+  "BackupLog": [],
+  "user_sessions": [],
+  "user_devices": [],
+  "security_events": [],
+  "exam_violations": [],
+  "watch_progress": [],
+  "video_notes": [],
+  "download_history": [],
+  "RolePermission": [
+    {
+      "id": "1cf5c838-bf23-4a6d-80ee-b41e530008d0",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "8e74dbaa-2831-471f-aced-13250f72cffd",
+      "created_at": "2026-06-14T00:28:45.638Z",
+      "updated_at": "2026-06-14T00:28:45.638Z",
+      "deleted_at": null
+    },
+    {
+      "id": "e3b62b00-1368-4176-81fe-f9bfe243990f",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "ad748cd6-b496-4e50-8f12-53edfd6bbb2a",
+      "created_at": "2026-06-14T00:28:46.119Z",
+      "updated_at": "2026-06-14T00:28:46.119Z",
+      "deleted_at": null
+    },
+    {
+      "id": "e0746b7b-1b78-4e93-946c-81b85385d6fe",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "b983f300-c8ee-4be9-975b-060010ddd7fe",
+      "created_at": "2026-06-14T00:28:46.363Z",
+      "updated_at": "2026-06-14T00:28:46.363Z",
+      "deleted_at": null
+    },
+    {
+      "id": "855fa01c-353e-4cd8-9f0d-3c9dac41c4a5",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "c1edb9d9-a240-448d-8ad2-d054e0cd29dc",
+      "created_at": "2026-06-14T00:28:46.607Z",
+      "updated_at": "2026-06-14T00:28:46.607Z",
+      "deleted_at": null
+    },
+    {
+      "id": "a9cea9b1-e54d-4608-a511-5eb83b1e6829",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "33dd69b7-0f4a-461e-baff-b0ce025131d3",
+      "created_at": "2026-06-14T00:28:46.851Z",
+      "updated_at": "2026-06-14T00:28:46.851Z",
+      "deleted_at": null
+    },
+    {
+      "id": "41f5bb10-e4d1-42f3-9148-7324ed7dfe75",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "35514a85-517d-4c14-8783-c8159de739ab",
+      "created_at": "2026-06-14T00:28:47.097Z",
+      "updated_at": "2026-06-14T00:28:47.097Z",
+      "deleted_at": null
+    },
+    {
+      "id": "5ce3f90e-0ccb-4e4a-aba6-3b47b8a95bcb",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "edaaf444-f6ba-4b4f-bd29-71ca91914192",
+      "created_at": "2026-06-14T00:28:47.343Z",
+      "updated_at": "2026-06-14T00:28:47.343Z",
+      "deleted_at": null
+    },
+    {
+      "id": "32d0bd18-01f7-45e9-8a5c-b5e380a1ab78",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "2a1a026a-3123-4773-be98-6c99ef2a2e5f",
+      "created_at": "2026-06-14T00:28:47.589Z",
+      "updated_at": "2026-06-14T00:28:47.589Z",
+      "deleted_at": null
+    },
+    {
+      "id": "a554b49b-d00e-4676-bf46-335482917962",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "3ff520b0-c0f6-475f-8b4f-36e566b947f8",
+      "created_at": "2026-06-14T00:28:47.838Z",
+      "updated_at": "2026-06-14T00:28:47.838Z",
+      "deleted_at": null
+    },
+    {
+      "id": "8744b3b3-da32-40c2-9b32-918c4f710154",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "2cd03bf7-4843-4dad-8227-cdb2e2df212d",
+      "created_at": "2026-06-14T00:28:48.091Z",
+      "updated_at": "2026-06-14T00:28:48.091Z",
+      "deleted_at": null
+    },
+    {
+      "id": "0fd56cb6-5503-4faa-87a7-3c45970a26a0",
+      "roleId": "3398630e-1a9e-4fa6-ad50-6bec22916a08",
+      "permissionId": "2172c635-8eb3-4a16-835e-3cc6a88eae23",
+      "created_at": "2026-06-14T00:28:48.348Z",
+      "updated_at": "2026-06-14T00:28:48.348Z",
+      "deleted_at": null
+    },
+    {
+      "id": "2cf91058-5b88-4c71-8a57-ba2ff2e8f4e0",
+      "roleId": "69161f56-05e6-4fea-b862-273df2dad8d9",
+      "permissionId": "b983f300-c8ee-4be9-975b-060010ddd7fe",
+      "created_at": "2026-06-14T00:28:48.569Z",
+      "updated_at": "2026-06-14T00:28:48.569Z",
+      "deleted_at": null
+    },
+    {
+      "id": "a3e8cd68-140f-4bca-bc1f-e69f1e3329bb",
+      "roleId": "69161f56-05e6-4fea-b862-273df2dad8d9",
+      "permissionId": "c1edb9d9-a240-448d-8ad2-d054e0cd29dc",
+      "created_at": "2026-06-14T00:28:48.652Z",
+      "updated_at": "2026-06-14T00:28:48.652Z",
+      "deleted_at": null
+    },
+    {
+      "id": "ca763294-4e6e-490b-8703-a3946a12ecd7",
+      "roleId": "69161f56-05e6-4fea-b862-273df2dad8d9",
+      "permissionId": "33dd69b7-0f4a-461e-baff-b0ce025131d3",
+      "created_at": "2026-06-14T00:28:48.735Z",
+      "updated_at": "2026-06-14T00:28:48.735Z",
+      "deleted_at": null
+    },
+    {
+      "id": "0ea1e57b-7698-4fd7-9115-29185d8cedbe",
+      "roleId": "69161f56-05e6-4fea-b862-273df2dad8d9",
+      "permissionId": "35514a85-517d-4c14-8783-c8159de739ab",
+      "created_at": "2026-06-14T00:28:48.819Z",
+      "updated_at": "2026-06-14T00:28:48.819Z",
+      "deleted_at": null
+    },
+    {
+      "id": "bd24d081-a49b-47b4-9f18-b54d4641114c",
+      "roleId": "69161f56-05e6-4fea-b862-273df2dad8d9",
+      "permissionId": "2cd03bf7-4843-4dad-8227-cdb2e2df212d",
+      "created_at": "2026-06-14T00:28:48.903Z",
+      "updated_at": "2026-06-14T00:28:48.903Z",
+      "deleted_at": null
+    },
+    {
+      "id": "bb24a2b8-c509-4f75-958b-ffcbb1be3694",
+      "roleId": "69161f56-05e6-4fea-b862-273df2dad8d9",
+      "permissionId": "2172c635-8eb3-4a16-835e-3cc6a88eae23",
+      "created_at": "2026-06-14T00:28:49.081Z",
+      "updated_at": "2026-06-14T00:28:49.081Z",
+      "deleted_at": null
+    },
+    {
+      "id": "599ccda6-7224-4ea5-badc-ff01c8b71b7b",
+      "roleId": "93e216e8-84eb-4202-ac04-e9027ea9fea0",
+      "permissionId": "edaaf444-f6ba-4b4f-bd29-71ca91914192",
+      "created_at": "2026-06-14T00:28:49.291Z",
+      "updated_at": "2026-06-14T00:28:49.291Z",
+      "deleted_at": null
+    },
+    {
+      "id": "9a5fb311-2e2b-4e6a-ad2b-578cdfb4fe85",
+      "roleId": "93e216e8-84eb-4202-ac04-e9027ea9fea0",
+      "permissionId": "2a1a026a-3123-4773-be98-6c99ef2a2e5f",
+      "created_at": "2026-06-14T00:28:49.517Z",
+      "updated_at": "2026-06-14T00:28:49.517Z",
+      "deleted_at": null
+    },
+    {
+      "id": "63502148-dc04-4544-8ac9-fdf34278a10e",
+      "roleId": "93e216e8-84eb-4202-ac04-e9027ea9fea0",
+      "permissionId": "3ff520b0-c0f6-475f-8b4f-36e566b947f8",
+      "created_at": "2026-06-14T00:28:49.760Z",
+      "updated_at": "2026-06-14T00:28:49.760Z",
+      "deleted_at": null
+    }
+  ],
+  "activity_timeline": []
+}

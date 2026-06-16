@@ -7,7 +7,6 @@ const DSN = import.meta.env?.VITE_SENTRY_DSN || "";
  */
 export function initSentry() {
   if (!DSN) {
-    console.warn("[Sentry Client] VITE_SENTRY_DSN is missing. Browser telemetry monitoring is inactive.");
     return;
   }
 

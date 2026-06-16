@@ -102,6 +102,19 @@ const DIFFICULTY_COLORS: Record<string, string> = {
   VERY_HARD: "bg-red-500/10 text-red-500 border-red-500/20",
 };
 
+const safeFormatDate = (dateString: any, includeTime = false) => {
+  if (!dateString) return "تاريخ غير متوفر";
+  try {
+    const d = new Date(dateString);
+    if (isNaN(d.getTime())) {
+      return "تاريخ غير متوفر";
+    }
+    return includeTime ? d.toLocaleString("ar-EG") : d.toLocaleDateString("ar-EG");
+  } catch {
+    return "تاريخ غير متوفر";
+  }
+};
+
 function ExamsPage() {
   const [exams, setExams] = useState<Exam[]>([]);
   const [selectedExam, setSelectedExam] = useState<Exam | null>(null);
@@ -112,6 +125,7 @@ function ExamsPage() {
   const [loadingCorrection, setLoadingCorrection] = useState(false);
   const [correctionDetails, setCorrectionDetails] = useState<any>(null);
   const [activeTab, setActiveTab] = useState<"exams" | "attempts" | "review">("exams");
+  const [hasError, setHasError] = useState(false);
 
   // Timer & Answers state
   const [timeLeft, setTimeLeft] = useState(900); // default 15 mins
@@ -136,8 +150,8 @@ function ExamsPage() {
     }
   }, [examId, exams]);
 
-  // Load Exams and Attempts
-  useEffect(() => {
+  const loadData = () => {
+    setHasError(false);
     const user = getCurrentUser();
     if (user) {
       getExamsFn()
@@ -147,8 +161,7 @@ function ExamsPage() {
         })
         .catch((err) => {
           console.error("Error loading exams in ExamsPage:", err);
-          toast.error("حدث خطأ أثناء تحميل الامتحانات");
-          setExams([]);
+          setHasError(true);
         });
 
       const isPreview = sessionStorage.getItem("student_preview_mode") === "true";
@@ -167,11 +180,15 @@ function ExamsPage() {
           })
           .catch((err) => {
             console.error("Error loading attempts in ExamsPage:", err);
-            toast.error("حدث خطأ أثناء تحميل سجل المحاولات");
-            setAttempts([]);
+            setHasError(true);
           });
       }
     }
+  };
+
+  // Load Exams and Attempts
+  useEffect(() => {
+    loadData();
   }, []);
 
   useEffect(() => {
@@ -487,6 +504,24 @@ function ExamsPage() {
     return `${mins}:${secs.toString().padStart(2, "0")}`;
   };
 
+  if (hasError) {
+    return (
+      <div className="mx-auto max-w-md rounded-2xl border border-destructive/30 bg-destructive/[0.02] p-8 text-center shadow-card my-12" dir="rtl">
+        <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-destructive/10 text-destructive mb-4">
+          <AlertTriangle className="size-6" />
+        </div>
+        <h3 className="font-display text-lg font-bold text-foreground">تعذر تحميل نتائج الامتحانات. حاول مرة أخرى.</h3>
+        <button
+          onClick={loadData}
+          className="mt-4 inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground hover:opacity-95 transition-all shadow-card cursor-pointer"
+        >
+          <RotateCcw className="size-4" />
+          <span>إعادة المحاولة</span>
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div className="mx-auto max-w-4xl space-y-6 text-end" dir="rtl">
       {/* Page Title */}
@@ -617,7 +652,7 @@ function ExamsPage() {
                             {att.score}% ({att.passed ? "ناجح" : "راسب"})
                           </span>
                           <span className="text-muted-foreground">
-                            {new Date(att.created_at || Date.now()).toLocaleDateString("ar-EG")}
+                            {safeFormatDate(att.created_at)}
                           </span>
                         </div>
                         <div className="flex justify-between items-center text-[10px]">
@@ -666,7 +701,7 @@ function ExamsPage() {
                         <tr key={att.id} className="hover:bg-secondary/10">
                           <td className="px-4 py-3 font-bold">{att.exam?.title || "اختبار عام"}</td>
                           <td className="px-4 py-3 text-muted-foreground">
-                            {new Date(att.created_at || Date.now()).toLocaleDateString("ar-EG")}
+                            {safeFormatDate(att.created_at)}
                           </td>
                           <td className="px-4 py-3 text-center font-bold">
                             {att.isPublished ? `${att.score}%` : "-"}
@@ -811,7 +846,7 @@ function ExamsPage() {
                             </div>
                             {correctionDetails.reviewedAt && (
                               <div className="text-[10px] text-muted-foreground mt-0.5">
-                                تاريخ وتوقيت نشر النتيجة: {new Date(correctionDetails.reviewedAt).toLocaleString("ar-EG")}
+                                تاريخ وتوقيت نشر النتيجة: {safeFormatDate(correctionDetails.reviewedAt, true)}
                               </div>
                             )}
                           </div>
@@ -941,7 +976,7 @@ function ExamsPage() {
                                   </p>
                                 </div>
 
-                                {studentEssayAns?.teacherGrade !== null ? (
+                                {studentEssayAns && studentEssayAns.teacherGrade !== null && studentEssayAns.teacherGrade !== undefined ? (
                                   <div className="rounded-xl bg-success/5 border border-success/20 p-3 space-y-2">
                                     <div className="flex justify-between items-center text-xs">
                                       <span className="font-bold text-success">
@@ -964,7 +999,9 @@ function ExamsPage() {
                                 ) : (
                                   <div className="rounded-xl bg-amber-500/5 border border-amber-500/20 p-3 text-center">
                                     <p className="text-xs text-amber-500 font-semibold">
-                                      بانتظار تصحيح المعلم للأسئلة المقالية
+                                      {!studentEssayAns || !studentEssayAns.answerText
+                                        ? "لم يتم تقديم إجابة للأسئلة المقالية"
+                                        : "بانتظار تصحيح المعلم للأسئلة المقالية"}
                                     </p>
                                   </div>
                                 )}

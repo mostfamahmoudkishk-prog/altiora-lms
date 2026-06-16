@@ -106,9 +106,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Lovable" },
       { name: "theme-color", content: "#0B3A8F" },
-      { name: "apple-mobile-web-app-capable", content: "yes" },
-      { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
-      { name: "apple-mobile-web-app-title", content: "Altiora" },
+      { name: "mobile-web-app-capable", content: "yes" },
       { property: "og:title", content: "Altiora" },
       {
         property: "og:description",

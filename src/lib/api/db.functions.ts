@@ -2224,41 +2224,75 @@ export const submitExamAttemptFn = createServerFn({ method: "POST" })
   });
 
 export const getExamCorrectionDetailsFn = createServerFn({ method: "GET" })
-  .validator(z.object({ attemptId: z.string().uuid() }))
+  .validator(z.object({ attemptId: z.string() }))
   .handler(async ({ data }) => {
     enforceRateLimits();
-    const attempt = await prisma.examAttempt.findUnique({
-      where: { id: data.attemptId },
-      include: {
-        exam: {
-          include: {
-            questions: {
-              where: { deleted_at: null },
-              include: {
-                choices: { where: { deleted_at: null } },
-              },
-              orderBy: { sortOrder: "asc" },
-            },
-          },
-        },
-        essayAnswers: {
-          where: { deleted_at: null },
-        },
-        attemptAnswers: {
-          where: { deleted_at: null },
-        },
-        student: {
-          include: { profile: true },
-        },
-        reviewedBy: {
-          include: { profile: true },
-        },
-        aiRecommendation: true,
-      },
-    });
 
-    if (!attempt) throw new Error("محاولة الامتحان غير موجودة");
-    return serializeBigIntsAndDecimals(attempt);
+    const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(data.attemptId);
+
+    if (isUuid) {
+      try {
+        const attempt = await prisma.examAttempt.findUnique({
+          where: { id: data.attemptId },
+          include: {
+            exam: {
+              include: {
+                questions: {
+                  where: { deleted_at: null },
+                  include: {
+                    choices: { where: { deleted_at: null } },
+                  },
+                  orderBy: { sortOrder: "asc" },
+                },
+              },
+            },
+            essayAnswers: {
+              where: { deleted_at: null },
+            },
+            attemptAnswers: {
+              where: { deleted_at: null },
+            },
+            student: {
+              include: { profile: true },
+            },
+            reviewedBy: {
+              include: { profile: true },
+            },
+            aiRecommendation: true,
+          },
+        });
+        if (attempt) {
+          return serializeBigIntsAndDecimals(attempt);
+        }
+      } catch (err) {
+        console.error("Error in getExamCorrectionDetailsFn from Prisma:", err);
+      }
+    }
+
+    // Fallback to JSON store
+    console.log(`Falling back to JSON store for attempt details: ${data.attemptId}`);
+    const store = dbService.readStore();
+    const attempt = store.examAttempts.find((a: any) => a.id === data.attemptId);
+    if (!attempt) {
+      throw new Error("محاولة الامتحان غير موجودة");
+    }
+
+    const exam = store.exams.find((e: any) => e.id === attempt.examId);
+    const studentUser = store.users.find((u: any) => u.id === attempt.studentId);
+    const studentProfile = studentUser ? store.profiles.find((p: any) => p.userId === studentUser.id) : null;
+
+    const enrichedAttempt = {
+      ...attempt,
+      exam,
+      essayAnswers: [],
+      attemptAnswers: [],
+      student: studentUser ? { ...studentUser, profile: studentProfile } : null,
+      reviewedBy: null,
+      aiRecommendation: null,
+      isPublished: true,
+    };
+
+    return serializeBigIntsAndDecimals(enrichedAttempt);
   });
 
 export const gradeEssayAnswerFn = createServerFn({ method: "POST" })

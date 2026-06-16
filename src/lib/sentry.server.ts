@@ -7,7 +7,6 @@ const DSN = process.env.SENTRY_DSN || "";
  */
 export function initSentry() {
   if (!DSN) {
-    console.warn("[Sentry Server] SENTRY_DSN is missing. Node telemetry monitoring is inactive.");
     return;
   }
 

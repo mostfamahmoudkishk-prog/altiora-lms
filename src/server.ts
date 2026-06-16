@@ -137,9 +137,29 @@ export default {
 
     if (isPublicAsset) {
       try {
-        const filePath = path.join(path.resolve("./public"), url.pathname);
-        if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
-          const fileBuffer = fs.readFileSync(filePath);
+        const possiblePaths = [
+          path.resolve("./public", url.pathname.slice(1)),
+          path.join(process.cwd(), "public", url.pathname),
+          path.join(process.cwd(), ".output/public", url.pathname),
+          path.resolve(".output/public", url.pathname.slice(1)),
+          path.join("/var/task", "public", url.pathname),
+          path.join("/var/task", ".output/public", url.pathname),
+        ];
+
+        let filePath = "";
+        let fileBuffer: Buffer | null = null;
+
+        for (const p of possiblePaths) {
+          try {
+            if (fs.existsSync(p) && fs.statSync(p).isFile()) {
+              filePath = p;
+              fileBuffer = fs.readFileSync(p);
+              break;
+            }
+          } catch {}
+        }
+
+        if (fileBuffer) {
           let contentType = "application/octet-stream";
           
           if (url.pathname.endsWith(".json")) {
@@ -155,7 +175,7 @@ export default {
           }
 
           return injectSecurityHeaders(
-            new Response(fileBuffer, {
+            new Response(fileBuffer as any, {
               status: 200,
               headers: {
                 "Content-Type": contentType,

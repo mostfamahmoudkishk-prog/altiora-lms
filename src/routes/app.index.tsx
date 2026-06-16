@@ -16,7 +16,7 @@ function AppHome() {
   useEffect(() => {
     getCoursesFn()
       .then((res) => {
-        const mapped = res.map((c: any) => ({
+        const mapped = (res || []).map((c: any) => ({
           id: c.id,
           title: c.title,
           img:

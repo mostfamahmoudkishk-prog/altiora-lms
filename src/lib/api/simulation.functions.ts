@@ -1,9 +1,10 @@
 import { createServerFn } from "@tanstack/react-start";
 import { getCookie, getRequestIP, getRequest, setCookie } from "@tanstack/react-start/server";
 import { z } from "zod";
-import { prisma, rawPrisma } from "../db";
-import { dbService } from "../dbService";
-import { UserRole } from "@prisma/client";
+const prisma = (globalThis as any).prisma;
+const rawPrisma = (globalThis as any).rawPrisma;
+const dbService = (globalThis as any).dbService;
+import { UserRole } from "@/types/db.types";
 import crypto from "node:crypto";
 import * as XLSX from "xlsx";
 

@@ -122,7 +122,7 @@ function AdminUsers() {
         data: {
           id: editUser.id,
           name: editUser.name,
-          role: editUser.role,
+          role: editUser.role as any,
           email: editUser.email,
         },
       });

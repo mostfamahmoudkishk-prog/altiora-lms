@@ -2,10 +2,19 @@ import { createServerFn } from "@tanstack/react-start";
 import { getRequestIP, setCookie } from "@tanstack/react-start/server";
 import { z } from "zod";
 import process from "node:process";
-import { dbService } from "../dbService";
 import { checkRateLimit } from "../rateLimiter";
-import { prisma } from "../db";
-import { UserRole } from "@prisma/client";
+
+let prisma: any;
+let dbService: any;
+
+async function initDb() {
+  if (!prisma) {
+    prisma = (await import("../db")).prisma;
+  }
+  if (!dbService) {
+    dbService = (await import("../dbService")).dbService;
+  }
+}
 
 const loginSchema = z.object({
   email: z
@@ -27,6 +36,7 @@ export const loginServerFn = createServerFn({ method: "POST" })
     return result.data;
   })
   .handler(async ({ data }) => {
+    await initDb();
     const { email, password } = data;
     const fingerprint = data.deviceFingerprint || "default_fingerprint";
     const browser = data.browser || "Web Client";
@@ -389,7 +399,7 @@ export const loginServerFn = createServerFn({ method: "POST" })
     let studentCode = "";
     if (role === "STUDENT") {
       try {
-        let sc = null;
+        let sc: any = null;
         if (userRecord.id) {
           sc = await prisma.studentCode.findUnique({
             where: { studentId: userRecord.id },
@@ -495,6 +505,7 @@ export const registerServerFn = createServerFn({ method: "POST" })
     return result.data;
   })
   .handler(async ({ data }) => {
+    await initDb();
     const { name, email, password, gender, stage, grade, phone, phoneGuardian } = data;
     const fingerprint = data.deviceFingerprint || "default_fingerprint";
     const browser = data.browser || "Web Client";
@@ -739,6 +750,7 @@ export const verifySessionFn = createServerFn({ method: "POST" })
     return result.data;
   })
   .handler(async ({ data }) => {
+    await initDb();
     const clientIp = getRequestIP() || "127.0.0.1";
     const res = dbService.verifySession(
       data.email,
@@ -797,6 +809,7 @@ export const logoutServerFn = createServerFn({ method: "POST" })
     return data as { sessionId?: string };
   })
   .handler(async ({ data }) => {
+    await initDb();
     const sessionId = data.sessionId || "";
     let userId: string | null = null;
     const clientIp = getRequestIP() || "127.0.0.1";
@@ -869,6 +882,7 @@ export const resetPasswordFn = createServerFn({ method: "POST" })
     return result.data;
   })
   .handler(async ({ data }) => {
+    await initDb();
     const clientIp = getRequestIP() || "127.0.0.1";
     const limitCheck = checkRateLimit(
       `reset_${clientIp}_${data.email.toLowerCase()}`,
@@ -886,6 +900,7 @@ export const resetPasswordFn = createServerFn({ method: "POST" })
 export const getStudentCodeFn = createServerFn({ method: "GET" })
   .validator(z.object({ email: z.string().email() }))
   .handler(async ({ data }) => {
+    await initDb();
     // Check database
     let caller = await prisma.user.findFirst({
       where: { email: { equals: data.email, mode: "insensitive" } },
@@ -961,6 +976,7 @@ export const updateThemeServerFn = createServerFn({ method: "POST" })
     return result.data;
   })
   .handler(async ({ data }) => {
+    await initDb();
     const { email, theme, themePreset } = data;
     
     // 1. Update PostgreSQL User database table

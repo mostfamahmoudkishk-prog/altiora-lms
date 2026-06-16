@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, Prisma } from "@prisma/client";
 import process from "node:process";
 import crypto from "node:crypto";
 
@@ -247,3 +247,8 @@ export const prisma = rawPrisma.$extends({
     }
   }
 });
+
+(globalThis as any).prisma = prisma;
+(globalThis as any).rawPrisma = rawPrisma;
+(globalThis as any).Prisma = Prisma;
+

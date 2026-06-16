@@ -899,7 +899,7 @@ function ExamsPage() {
                                   const isCorrect = choice.isCorrect;
 
                                   let styleClass = "border-border bg-card text-foreground";
-                                  let icon = null;
+                                  let icon: React.ReactNode = null;
 
                                   if (isSelected) {
                                     if (isCorrect) {

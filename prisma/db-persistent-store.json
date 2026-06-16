@@ -733,6 +733,21 @@
       "country": "مصر",
       "last_activity": "2026-06-15T23:46:14.523Z",
       "created_at": "2026-06-15T23:46:13.307Z",
+      "revoked_at": "2026-06-16T20:35:57.545Z",
+      "status": "REVOKED"
+    },
+    {
+      "id": "us_1781642164357",
+      "user_id": "u-teacher",
+      "session_id": "sess_u0aqf2fbfogxdkdnklfj9",
+      "device_id": "dev_vfyj74jy",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "ip_hash": "::1",
+      "country": "مصر",
+      "last_activity": "2026-06-16T20:36:06.360Z",
+      "created_at": "2026-06-16T20:36:04.356Z",
       "revoked_at": null,
       "status": "ACTIVE"
     }
@@ -1176,6 +1191,17 @@
       "os": "Windows PC",
       "first_seen": "2026-06-15T23:46:13.307Z",
       "last_seen": "2026-06-15T23:46:13.307Z",
+      "revoked": false
+    },
+    {
+      "id": "ud_1781642164356",
+      "user_id": "u-teacher",
+      "device_id": "dev_vfyj74jy",
+      "fingerprint_hash": "dev_yymqslnbe",
+      "browser": "Chrome",
+      "os": "Windows PC",
+      "first_seen": "2026-06-16T20:36:04.356Z",
+      "last_seen": "2026-06-16T20:36:04.356Z",
       "revoked": false
     }
   ],
@@ -2832,6 +2858,31 @@
         "os": "Windows PC"
       },
       "created_at": "2026-06-15T23:46:13.307Z"
+    },
+    {
+      "id": "sec_login_1781642164357",
+      "user_id": "u-teacher",
+      "type": "LOGIN",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_vfyj74jy",
+        "browser": "Chrome",
+        "os": "Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-16T20:36:04.356Z"
+    },
+    {
+      "id": "sec_dev_1781642164357",
+      "user_id": "u-teacher",
+      "type": "NEW_DEVICE",
+      "severity": "LOW",
+      "metadata": {
+        "device_id": "dev_vfyj74jy",
+        "browser": "Chrome",
+        "os": "Windows PC"
+      },
+      "created_at": "2026-06-16T20:36:04.356Z"
     }
   ],
   "exam_violations": [
@@ -3520,6 +3571,16 @@
         "ip": "::1"
       },
       "created_at": "2026-06-15T23:46:13.307Z"
+    },
+    {
+      "id": "timeline_1781642164357",
+      "user_id": "u-teacher",
+      "type": "login",
+      "metadata": {
+        "device": "Chrome / Windows PC",
+        "ip": "::1"
+      },
+      "created_at": "2026-06-16T20:36:04.356Z"
     }
   ],
   "simulation_sessions": [

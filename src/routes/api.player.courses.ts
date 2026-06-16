@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { prisma } from "@/lib/db";
 import { verifyJwt } from "@/lib/jwt";
 
 export const Route = createFileRoute("/api/player/courses")({
@@ -7,6 +6,7 @@ export const Route = createFileRoute("/api/player/courses")({
     handlers: {
       GET: async ({ request }: { request: Request }) => {
         try {
+          const { prisma } = await import("@/lib/db");
           const authHeader = request.headers.get("Authorization");
           if (!authHeader || !authHeader.startsWith("Bearer ")) {
             return new Response(JSON.stringify({ error: "غير مصرح." }), {
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/api/player/courses")({
           const userId = payload.userId;
           const role = payload.role;
 
-          let courses = [];
+          let courses: any[] = [];
 
           if (role === "SUPER_ADMIN" || role === "ADMIN" || role === "TEACHER") {
             // Return all non-archived courses for testing/management roles

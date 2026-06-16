@@ -562,7 +562,7 @@ function CourseDetailPage() {
   const podium = useMemo(() => {
     if (!leaderboard || !leaderboard.entries) return [];
     const entries = leaderboard.entries.slice(0, 3);
-    const sorted = [];
+    const sorted: any[] = [];
     if (entries[1]) sorted.push(entries[1]);
     if (entries[0]) sorted.push(entries[0]);
     if (entries[2]) sorted.push(entries[2]);

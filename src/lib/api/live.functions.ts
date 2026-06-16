@@ -1,10 +1,10 @@
 import { createServerFn } from "@tanstack/react-start";
 import { getCookie, getRequestIP } from "@tanstack/react-start/server";
-import { prisma } from "../db";
+const prisma = (globalThis as any).prisma;
+const dbService = (globalThis as any).dbService;
+import { UserRole } from "@/types/db.types";
 import { z } from "zod";
-import { dbService } from "../dbService";
 import { logger } from "../logger";
-import { UserRole } from "@prisma/client";
 
 // Serialize Helper to convert Decimals/BigInts
 function recursivelySerialize(obj: any): any {

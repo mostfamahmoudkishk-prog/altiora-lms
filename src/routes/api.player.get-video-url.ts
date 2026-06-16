@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { prisma } from "@/lib/db";
 import { verifyJwt } from "@/lib/jwt";
 import { generateSignedPlaybackUrl } from "@/lib/bunny";
 
@@ -8,6 +7,7 @@ export const Route = createFileRoute("/api/player/get-video-url")({
     handlers: {
       POST: async ({ request }: { request: Request }) => {
         try {
+          const { prisma } = await import("@/lib/db");
           const authHeader = request.headers.get("Authorization");
           if (!authHeader || !authHeader.startsWith("Bearer ")) {
             return new Response(JSON.stringify({ error: "غير مصرح." }), {

@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { verifyJwt } from "@/lib/jwt";
-import { trackLessonWatchProgress } from "@/lib/bunny";
 
 export const Route = createFileRoute("/api/player/progress")({
   server: {
     handlers: {
       POST: async ({ request }: { request: Request }) => {
         try {
+          const { trackLessonWatchProgress } = await import("@/lib/bunny");
           const authHeader = request.headers.get("Authorization");
           if (!authHeader || !authHeader.startsWith("Bearer ")) {
             return new Response(JSON.stringify({ error: "غير مصرح." }), {

@@ -1,5 +1,4 @@
 import crypto from "crypto";
-import { prisma } from "./db";
 
 // Load configurations from environment variables
 const getBunnyConfig = () => {
@@ -129,6 +128,7 @@ export async function trackLessonWatchProgress(
   watchedSeconds: number,
   totalSeconds: number
 ) {
+  const { prisma } = await import("./db");
   const percentage = totalSeconds > 0 ? (watchedSeconds / totalSeconds) * 100 : 0;
   const isCompleted = percentage >= 90; // Mark completed at 90%+ watch time
 

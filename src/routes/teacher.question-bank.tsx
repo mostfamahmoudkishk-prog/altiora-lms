@@ -1946,7 +1946,7 @@ function TeacherQuestionBank() {
         });
 
         // Calculate selected attempt metrics
-        let metrics = null;
+        let metrics: any = null;
         if (selectedAttemptDetails) {
           const exam = selectedAttemptDetails.exam;
           const questions = exam?.questions || [];

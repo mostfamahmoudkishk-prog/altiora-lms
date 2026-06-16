@@ -5,6 +5,7 @@ initSentry();
 import fs from "node:fs";
 import path from "node:path";
 import { prisma } from "./lib/db";
+import { dbService } from "./lib/dbService";
 import { logger } from "./lib/logger";
 import { checkRateLimit } from "./lib/rateLimiter";
 import { checkRateLimitTokenBucket } from "./lib/redis";
@@ -51,7 +52,7 @@ function injectSecurityHeaders(response: Response, requestUrl?: string): Respons
   // 1. Content Security Policy (Bunny Stream, Supabase, Google Fonts, Cloudflare friendly)
   headers.set(
     "Content-Security-Policy",
-    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' blob: https:; connect-src 'self' https: wss:; frame-src 'self' https://iframe.mediadelivery.net https://*.mediadelivery.net; frame-ancestors 'none';",
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' data: https://fonts.gstatic.com https://fonts.googleapis.com; img-src 'self' data: blob: https:; media-src 'self' blob: https:; connect-src 'self' https: wss:; frame-src 'self' https://iframe.mediadelivery.net https://*.mediadelivery.net; frame-ancestors 'none';",
   );
 
   // 2. Strict Transport Security
@@ -114,6 +115,60 @@ export default {
     const url = new URL(request.url);
     const ip = request.headers.get("x-forwarded-for") || "127.0.0.1";
     const userAgent = request.headers.get("user-agent") || "unknown";
+
+    // --- SERVE PUBLIC PWA & STATIC ASSETS DIRECTLY ---
+    const publicFiles = [
+      "/manifest.json",
+      "/sw.js",
+      "/favicon.ico",
+      "/favicon.png",
+      "/apple-touch-icon.png",
+      "/favicon-16x16.png",
+      "/favicon-32x32.png",
+      "/icon-192.png",
+      "/icon-512.png",
+      "/maskable-icon-512.png",
+    ];
+
+    const isPublicAsset =
+      publicFiles.includes(url.pathname) ||
+      url.pathname.startsWith("/icons/") ||
+      url.pathname.startsWith("/screenshots/");
+
+    if (isPublicAsset) {
+      try {
+        const filePath = path.join(path.resolve("./public"), url.pathname);
+        if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+          const fileBuffer = fs.readFileSync(filePath);
+          let contentType = "application/octet-stream";
+          
+          if (url.pathname.endsWith(".json")) {
+            contentType = "application/json; charset=utf-8";
+          } else if (url.pathname.endsWith(".js")) {
+            contentType = "application/javascript; charset=utf-8";
+          } else if (url.pathname.endsWith(".ico")) {
+            contentType = "image/x-icon";
+          } else if (url.pathname.endsWith(".png")) {
+            contentType = "image/png";
+          } else if (url.pathname.endsWith(".html")) {
+            contentType = "text/html; charset=utf-8";
+          }
+
+          return injectSecurityHeaders(
+            new Response(fileBuffer, {
+              status: 200,
+              headers: {
+                "Content-Type": contentType,
+                "Cache-Control": "public, max-age=86400",
+              },
+            }),
+            request.url
+          );
+        }
+      } catch (err) {
+        console.error("Failed to serve public asset directly:", url.pathname, err);
+      }
+    }
 
     // --- CSRF DOUBLE-SUBMIT VERIFICATION ---
     if (request.method === "POST" || request.method === "PUT" || request.method === "DELETE") {

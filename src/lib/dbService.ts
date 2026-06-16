@@ -1532,3 +1532,5 @@ export async function selfInitialize() {
 selfInitialize().catch((err) => {
   console.error("Fatal error in selfInitialize:", err);
 });
+
+(globalThis as any).dbService = dbService;

@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { prisma } from "@/lib/db";
 import { verifyJwt } from "@/lib/jwt";
 
 export const Route = createFileRoute("/api/player/open-lesson/$id")({
@@ -7,6 +6,7 @@ export const Route = createFileRoute("/api/player/open-lesson/$id")({
     handlers: {
       GET: async ({ request, params }: { request: Request; params: { id: string } }) => {
         try {
+          const { prisma } = await import("@/lib/db");
           const lessonId = params.id;
           const authHeader = request.headers.get("Authorization");
           if (!authHeader || !authHeader.startsWith("Bearer ")) {

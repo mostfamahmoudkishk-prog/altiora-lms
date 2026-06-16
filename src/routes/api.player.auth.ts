@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { prisma } from "@/lib/db";
 import { signJwt } from "@/lib/jwt";
 import bcrypt from "bcryptjs";
 
@@ -8,6 +7,7 @@ export const Route = createFileRoute("/api/player/auth")({
     handlers: {
       POST: async ({ request }: { request: Request }) => {
         try {
+          const { prisma } = await import("@/lib/db");
           const body = await request.json();
           const { email, password } = body;
 
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/api/player/auth")({
             process.env.SUPER_ADMIN_PASSWORD_HASH ||
             "$2b$10$J6kn2Z3jjKm9mund3jtkQeh3HhhE6e2liWASJm4jF4td9ASShNm3i";
 
-          let user = null;
+          let user: any = null;
           let name = "";
           
           if (email.trim().toLowerCase() === superAdminEmail.trim().toLowerCase()) {

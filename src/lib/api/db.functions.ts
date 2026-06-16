@@ -1,16 +1,16 @@
 import { createServerFn } from "@tanstack/react-start";
 import { getCookie, getRequestIP, getRequest } from "@tanstack/react-start/server";
-import { prisma } from "../db";
-import { z } from "zod";
+const prisma = (globalThis as any).prisma;
+const dbService = (globalThis as any).dbService;
+const Prisma = (globalThis as any).Prisma;
 import {
   UserRole,
   TicketStatus,
   OrderStatus,
   QuestionType,
   QuestionDifficulty,
-  Prisma,
-} from "@prisma/client";
-import { dbService } from "../dbService";
+} from "@/types/db.types";
+import { z } from "zod";
 import * as XLSX from "xlsx";
 import { checkRateLimit } from "../rateLimiter";
 import crypto from "node:crypto";
@@ -238,7 +238,7 @@ export const getUsersFn = createServerFn({ method: "GET" }).handler(async () => 
     : null;
   const sessionUser = session ? store.users.find((u) => u.id === session.user_id) : null;
 
-  let roleFilter = undefined;
+  let roleFilter: any = undefined;
   if (sessionUser && sessionUser.role === "ADMIN") {
     roleFilter = { in: [UserRole.TEACHER, UserRole.STUDENT] };
   }
@@ -2711,7 +2711,7 @@ export const importQuestionsFromExcelFn = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     await checkTeacherOrAdminAuth();
 
-    const results = [];
+    const results: any[] = [];
     for (const q of data.questions) {
       const question = await prisma.question.create({
         data: {
@@ -2728,7 +2728,7 @@ export const importQuestionsFromExcelFn = createServerFn({ method: "POST" })
       });
 
       if (q.type === "MULTIPLE_CHOICE") {
-        const choicesData = [];
+        const choicesData: any[] = [];
         if (q.choice1)
           choicesData.push({ text: q.choice1, isCorrect: q.choice1 === q.correctAnswer });
         if (q.choice2)
@@ -3396,7 +3396,7 @@ export const recalculateLeaderboardFn = createServerFn({ method: "POST" })
       where: { courseId: data.courseId, deleted_at: null },
     });
 
-    const calculatedEntries = [];
+    const calculatedEntries: any[] = [];
 
     for (const enrollment of enrollments) {
       const studentId = enrollment.studentId;
@@ -3455,7 +3455,7 @@ export const recalculateLeaderboardFn = createServerFn({ method: "POST" })
     for (let i = 0; i < calculatedEntries.length; i++) {
       const entry = calculatedEntries[i];
       const rank = i + 1;
-      let medal = null;
+      let medal: string | null = null;
       if (rank === 1) medal = "GOLD";
       else if (rank === 2) medal = "SILVER";
       else if (rank === 3) medal = "BRONZE";
@@ -7378,7 +7378,7 @@ export const sendTeacherNotificationFn = createServerFn({ method: "POST" })
       return { success: true, count: 0, message: "لا يوجد طلاب مسجلين لإرسال التنبيه لهم" };
     }
 
-    const createdNotifications = [];
+    const createdNotifications: any[] = [];
     for (const userId of recipientUserIds) {
       const notif = await prisma.notification.create({
         data: {

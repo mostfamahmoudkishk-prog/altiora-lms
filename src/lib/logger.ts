@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { prisma } from "./db";
+const prisma = (globalThis as any).prisma;
 
 export type LogLevel = "INFO" | "WARNING" | "ERROR" | "CRITICAL";
 export type LogCategory = "REQUEST" | "ERROR" | "AUDIT" | "SECURITY";

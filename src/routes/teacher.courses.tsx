@@ -2241,21 +2241,26 @@ function TeacherCourses() {
                                   toast.loading("جاري رفع ملف PDF...");
                                   const reader = new FileReader();
                                   reader.onload = async (event) => {
-                                    const base64 = event.target?.result as string;
-                                    const res = await uploadFileFn({
-                                      data: {
-                                        name: file.name,
-                                        base64,
-                                        category: "pdf",
-                                      },
-                                    });
-                                    toast.dismiss();
-                                    if (res.success && res.data?.url) {
-                                      const fullUrl = window.location.origin + res.data.url;
-                                      setLessonSettings((prev) => ({ ...prev, pdfUrl: fullUrl }));
-                                      toast.success("تم رفع ملف PDF بنجاح!");
-                                    } else {
-                                      toast.error("فشل رفع الملف.");
+                                    try {
+                                      const base64 = event.target?.result as string;
+                                      const res = await uploadFileFn({
+                                        data: {
+                                          name: file.name,
+                                          base64,
+                                          category: "pdf",
+                                        },
+                                      });
+                                      toast.dismiss();
+                                      if (res.success && res.data?.url) {
+                                        const fullUrl = window.location.origin + res.data.url;
+                                        setLessonSettings((prev) => ({ ...prev, pdfUrl: fullUrl }));
+                                        toast.success("تم رفع ملف PDF بنجاح!");
+                                      } else {
+                                        toast.error("فشل رفع الملف.");
+                                      }
+                                    } catch (innerErr: any) {
+                                      toast.dismiss();
+                                      toast.error("فشل رفع الملف: " + innerErr.message);
                                     }
                                   };
                                   reader.readAsDataURL(file);

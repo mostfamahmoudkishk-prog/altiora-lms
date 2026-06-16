@@ -3115,19 +3115,24 @@ function TeacherQuestionBank() {
                                       setUploadingQuestionImage(true);
                                       const reader = new FileReader();
                                       reader.onload = async (ev) => {
-                                        const base64 = ev.target?.result as string;
-                                        const res = await uploadFileFn({
-                                          data: { name: file.name, base64, category: "cover" },
-                                        });
-                                        if (res.success && res.data?.url) {
-                                          setFormQuestionImageUrl(
-                                            window.location.origin + res.data.url,
-                                          );
-                                          toast.success("تم رفع صورة السؤال!");
-                                        } else {
-                                          toast.error("فشل رفع الصورة.");
+                                        try {
+                                          const base64 = ev.target?.result as string;
+                                          const res = await uploadFileFn({
+                                            data: { name: file.name, base64, category: "cover" },
+                                          });
+                                          if (res.success && res.data?.url) {
+                                            setFormQuestionImageUrl(
+                                              window.location.origin + res.data.url,
+                                            );
+                                            toast.success("تم رفع صورة السؤال!");
+                                          } else {
+                                            toast.error("فشل رفع الصورة.");
+                                          }
+                                        } catch (innerErr: any) {
+                                          toast.error("فشل رفع الصورة: " + innerErr.message);
+                                        } finally {
+                                          setUploadingQuestionImage(false);
                                         }
-                                        setUploadingQuestionImage(false);
                                       };
                                       reader.readAsDataURL(file);
                                     } catch (err: any) {
@@ -3177,19 +3182,24 @@ function TeacherQuestionBank() {
                                       setUploadingQuestionPdf(true);
                                       const reader = new FileReader();
                                       reader.onload = async (ev) => {
-                                        const base64 = ev.target?.result as string;
-                                        const res = await uploadFileFn({
-                                          data: { name: file.name, base64, category: "pdf" },
-                                        });
-                                        if (res.success && res.data?.url) {
-                                          setFormQuestionPdfUrl(
-                                            window.location.origin + res.data.url,
-                                          );
-                                          toast.success("تم رفع ملف PDF المرفق!");
-                                        } else {
-                                          toast.error("فشل الرفع.");
+                                        try {
+                                          const base64 = ev.target?.result as string;
+                                          const res = await uploadFileFn({
+                                            data: { name: file.name, base64, category: "pdf" },
+                                          });
+                                          if (res.success && res.data?.url) {
+                                            setFormQuestionPdfUrl(
+                                              window.location.origin + res.data.url,
+                                            );
+                                            toast.success("تم رفع ملف PDF المرفق!");
+                                          } else {
+                                            toast.error("فشل الرفع.");
+                                          }
+                                        } catch (innerErr: any) {
+                                          toast.error("فشل الرفع: " + innerErr.message);
+                                        } finally {
+                                          setUploadingQuestionPdf(false);
                                         }
-                                        setUploadingQuestionPdf(false);
                                       };
                                       reader.readAsDataURL(file);
                                     } catch (err: any) {

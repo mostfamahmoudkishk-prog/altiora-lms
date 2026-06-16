@@ -185,7 +185,22 @@ async function checkPermissionAuth(permission: string): Promise<string> {
   if (!session) {
     throw new Error("ERR_UNAUTHORIZED: غير مصرح بالوصول بدون جلسة نشطة.");
   }
-  const user = store.users.find((u) => u.id === session.user_id);
+  let user = store.users.find((u) => u.id === session.user_id);
+  if (!user) {
+    try {
+      const dbUser = await prisma.user.findUnique({
+        where: { id: session.user_id },
+        select: { id: true, role: true, email: true },
+      });
+      if (dbUser) {
+        user = {
+          id: dbUser.id,
+          email: dbUser.email,
+          role: dbUser.role.toString(),
+        };
+      }
+    } catch {}
+  }
   if (!user) {
     throw new Error("ERR_UNAUTHORIZED: المستخدم غير موجود.");
   }
@@ -217,7 +232,22 @@ async function checkTeacherOrAdminAuth() {
   if (!session) {
     throw new Error("ERR_UNAUTHORIZED: غير مصرح بالوصول بدون جلسة معلم أو مسؤول نشطة.");
   }
-  const user = store.users.find((u) => u.id === session.user_id);
+  let user = store.users.find((u) => u.id === session.user_id);
+  if (!user) {
+    try {
+      const dbUser = await prisma.user.findUnique({
+        where: { id: session.user_id },
+        select: { id: true, role: true, email: true },
+      });
+      if (dbUser) {
+        user = {
+          id: dbUser.id,
+          email: dbUser.email,
+          role: dbUser.role.toString(),
+        };
+      }
+    } catch {}
+  }
   if (!user || (user.role !== "TEACHER" && user.role !== "ADMIN" && user.role !== "SUPER_ADMIN")) {
     throw new Error("ERR_UNAUTHORIZED: غير مصرح بالوصول بدون جلسة معلم أو مسؤول نشطة.");
   }
@@ -947,10 +977,12 @@ function checkSessionUser(email: string) {
   if (!session) {
     throw new Error("ERR_UNAUTHORIZED: الجلسة غير صالحة أو منتهية.");
   }
+
   const user = store.users.find((u) => u.id === session.user_id);
   if (!user) {
     throw new Error("ERR_UNAUTHORIZED: المستخدم غير موجود.");
   }
+
   if (user.role !== "SUPER_ADMIN" && user.email.toLowerCase() !== email.toLowerCase()) {
     throw new Error("ERR_UNAUTHORIZED: لا تملك صلاحية الوصول لبيانات هذا الحساب.");
   }
@@ -1094,7 +1126,22 @@ export const deleteVideoNoteFn = createServerFn({ method: "POST" })
     if (!session) throw new Error("ERR_UNAUTHORIZED");
     const note = store.video_notes.find((n) => n.id === data.noteId);
     if (note && note.user_id !== session.user_id) {
-      const caller = store.users.find((u) => u.id === session.user_id);
+      let caller = store.users.find((u) => u.id === session.user_id);
+      if (!caller) {
+        try {
+          const dbUser = await prisma.user.findUnique({
+            where: { id: session.user_id },
+            select: { id: true, role: true, email: true },
+          });
+          if (dbUser) {
+            caller = {
+              id: dbUser.id,
+              email: dbUser.email,
+              role: dbUser.role.toString(),
+            };
+          }
+        } catch {}
+      }
       if (caller?.role !== "SUPER_ADMIN") {
         throw new Error("ERR_UNAUTHORIZED: لا تملك صلاحية حذف هذه الملاحظة.");
       }
@@ -1333,7 +1380,22 @@ export const revokeSessionFn = createServerFn({ method: "POST" })
     const targetSession = store.user_sessions.find((s) => s.device_id === data.deviceId);
     const targetUserId = targetDevice?.user_id || targetSession?.user_id;
 
-    const user = store.users.find((u) => u.id === session.user_id);
+    let user = store.users.find((u) => u.id === session.user_id);
+    if (!user) {
+      try {
+        const dbUser = await prisma.user.findUnique({
+          where: { id: session.user_id },
+          select: { id: true, role: true, email: true },
+        });
+        if (dbUser) {
+          user = {
+            id: dbUser.id,
+            email: dbUser.email,
+            role: dbUser.role.toString(),
+          };
+        }
+      } catch {}
+    }
     if (user && user.role !== "SUPER_ADMIN" && targetUserId && targetUserId !== session.user_id) {
       throw new Error("ERR_UNAUTHORIZED: لا تملك صلاحية إلغاء هذه الجلسة.");
     }
@@ -6005,7 +6067,22 @@ export const getBunnySignedUrlFn = createServerFn({ method: "GET" })
     if (!session) {
       throw new Error("ERR_UNAUTHORIZED: غير مصرح بالوصول بدون جلسة نشطة.");
     }
-    const user = store.users.find((u) => u.id === session.user_id);
+    let user = store.users.find((u) => u.id === session.user_id);
+    if (!user) {
+      try {
+        const dbUser = await prisma.user.findUnique({
+          where: { id: session.user_id },
+          select: { id: true, role: true, email: true },
+        });
+        if (dbUser) {
+          user = {
+            id: dbUser.id,
+            email: dbUser.email,
+            role: dbUser.role.toString(),
+          };
+        }
+      } catch {}
+    }
     if (!user) {
       throw new Error("ERR_UNAUTHORIZED: غير مصرح بالوصول بدون جلسة نشطة.");
     }

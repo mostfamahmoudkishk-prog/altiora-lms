@@ -854,6 +854,34 @@ export const dbService = {
     if (userRole === "SUPER_ADMIN") return true;
     if (!userRole) return false;
 
+    const adminPermissions = [
+      "USER_MANAGEMENT",
+      "TEACHER_MANAGEMENT",
+      "STUDENT_MANAGEMENT",
+      "COURSE_MANAGEMENT",
+      "LESSON_MANAGEMENT",
+      "EXAM_MANAGEMENT",
+      "PAYMENT_MANAGEMENT",
+      "COUPON_MANAGEMENT",
+      "ANALYTICS",
+      "AUDIT_LOGS",
+      "SESSION_MANAGEMENT",
+      "DEVICE_MANAGEMENT",
+      "NOTIFICATIONS",
+    ];
+
+    const teacherPermissions = [
+      "COURSE_MANAGEMENT",
+      "LESSON_MANAGEMENT",
+      "EXAM_MANAGEMENT",
+      "COUPON_MANAGEMENT",
+      "ANALYTICS",
+      "NOTIFICATIONS",
+    ];
+
+    if (userRole === "ADMIN" && adminPermissions.includes(permissionName)) return true;
+    if (userRole === "TEACHER" && teacherPermissions.includes(permissionName)) return true;
+
     const roleObj = (store as any).roles?.find((r: any) => r.name === userRole);
     if (!roleObj) return false;
 

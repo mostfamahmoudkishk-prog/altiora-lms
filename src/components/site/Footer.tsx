@@ -1,6 +1,7 @@
 import { Facebook, HelpCircle } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import logoTransparent from "@/assets/altiora-logo-transparent.png";
+import { PoweredByMogenix } from "./PoweredByMogenix";
 
 export function Footer() {
   const links: { label: string; to: string }[] = [
@@ -114,12 +115,7 @@ export function Footer() {
         <div className="container mx-auto flex flex-col items-center justify-center gap-2 px-4 py-5 text-center text-xs text-white/60 md:flex-row md:gap-4 md:px-6">
           <span>© 2026 جميع الحقوق محفوظة</span>
           <span className="hidden md:inline">|</span>
-          <span>
-            Powered By:{" "}
-            <span className="font-bold text-primary">
-              ERASA<span className="text-accent">TECH</span>
-            </span>
-          </span>
+          <PoweredByMogenix />
         </div>
       </div>
     </footer>

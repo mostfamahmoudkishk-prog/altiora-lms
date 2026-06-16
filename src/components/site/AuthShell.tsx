@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/altiora-logo-transparent.png";
+import { PoweredByMogenix } from "./PoweredByMogenix";
 
 export function AuthShell({ children }: { children: ReactNode }) {
   return (
@@ -38,6 +39,9 @@ export function AuthShell({ children }: { children: ReactNode }) {
           </Link>
         </div>
         {children}
+        <div className="mt-8 flex justify-center border-t border-border/60 pt-4">
+          <PoweredByMogenix />
+        </div>
       </motion.div>
     </div>
   );
